@@ -1,0 +1,12 @@
+artifactory:
+  enabled: true
+  postgresql:
+    enabled: false
+  waitForDatabase: false
+database:
+  type: postgresql
+  driver: org.postgresql.Driver
+  url: jdbc:postgresql://<PG_URL>:<PORT>/<DB_NAME>
+  user: <username>
+  password: <password>
+  

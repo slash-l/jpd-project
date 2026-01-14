@@ -1,0 +1,19 @@
+# --- CocoaPods 相关 ---
+# 忽略 Pods 目录（包含所有第三方库源码），因为可以通过 pod install 重新下载
+# 注意：有些团队为了保证绝对的构建一致性会提交 Pods 文件夹，但 90% 的 iOS 项目选择忽略它
+Pods/
+
+# 忽略本地生成的 Workspace 状态（如打开了哪些文件、窗口位置等）
+*.xcworkspace/xcuserdata/
+
+# --- Xcode 编译与系统相关 ---
+build/
+DerivedData/
+*.moved-aside
+*.xcuserstate
+
+# --- 敏感信息与本地配置 ---
+.netrc
+.DS_Store
+*.tar.gz
+Podfile.lock

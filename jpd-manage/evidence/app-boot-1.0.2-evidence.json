@@ -1,0 +1,87 @@
+{
+  "schemaVersion": "1.0",
+  "type": "artifact",
+  "result": {
+    "subjectRepoPath": "slash-maven-dev-local/com/example/jfrog/app-boot/1.0.2/app-boot-1.0.2.war",
+    "evidence": [
+      {
+        "predicateSlug": "approval",
+        "predicateType": "https://jfrog.com/evidence/approval/v1",
+        "downloadPath": "slash-maven-dev-local/.evidence/224e4b9141290c193abc230c02af76cc3dbd835f565d950d03c31109e277c4a7/d4183c7134b4794f517fbfbc3cf8e9f3521c45b33026e3448bb5dca1fcbd56b8/approval-1767093627053-04c5a30c.json",
+        "verified": false,
+        "subject": {
+          "sha256": "d4183c7134b4794f517fbfbc3cf8e9f3521c45b33026e3448bb5dca1fcbd56b8"
+        },
+        "createdBy": "slash",
+        "createdAt": "2025-12-30T11:20:26.764Z"
+      },
+      {
+        "predicateSlug": "approval",
+        "predicateType": "https://jfrog.com/evidence/approval/v1",
+        "downloadPath": "slash-maven-dev-local/.evidence/224e4b9141290c193abc230c02af76cc3dbd835f565d950d03c31109e277c4a7/d4183c7134b4794f517fbfbc3cf8e9f3521c45b33026e3448bb5dca1fcbd56b8/approval-1767255131357-701c048e.json",
+        "verified": false,
+        "subject": {
+          "sha256": "d4183c7134b4794f517fbfbc3cf8e9f3521c45b33026e3448bb5dca1fcbd56b8"
+        },
+        "createdBy": "slash",
+        "createdAt": "2026-01-01T08:12:10.993Z"
+      },
+      {
+        "predicateSlug": "approval",
+        "predicateType": "https://jfrog.com/evidence/approval/v1",
+        "downloadPath": "slash-maven-dev-local/.evidence/224e4b9141290c193abc230c02af76cc3dbd835f565d950d03c31109e277c4a7/d4183c7134b4794f517fbfbc3cf8e9f3521c45b33026e3448bb5dca1fcbd56b8/approval-1767255377238-d2a07c90.json",
+        "verified": true,
+        "signingKey": {
+          "alias": "evd-key-20251230-150302"
+        },
+        "subject": {
+          "sha256": "d4183c7134b4794f517fbfbc3cf8e9f3521c45b33026e3448bb5dca1fcbd56b8"
+        },
+        "createdBy": "slash",
+        "createdAt": "2026-01-01T08:16:16.799Z"
+      },
+      {
+        "predicateSlug": "test",
+        "predicateType": "https://jfrog.com/evidence/test/v1",
+        "downloadPath": "slash-maven-dev-local/.evidence/224e4b9141290c193abc230c02af76cc3dbd835f565d950d03c31109e277c4a7/d4183c7134b4794f517fbfbc3cf8e9f3521c45b33026e3448bb5dca1fcbd56b8/test-1767256568041-3adf5da1.json",
+        "verified": true,
+        "signingKey": {
+          "alias": "evd-key-20251230-150302"
+        },
+        "subject": {
+          "sha256": "d4183c7134b4794f517fbfbc3cf8e9f3521c45b33026e3448bb5dca1fcbd56b8"
+        },
+        "createdBy": "slash",
+        "createdAt": "2026-01-01T08:36:07.643Z"
+      },
+      {
+        "predicateSlug": "abc",
+        "predicateType": "https://jfrog.com/evidence/abc/v1",
+        "downloadPath": "slash-maven-dev-local/.evidence/224e4b9141290c193abc230c02af76cc3dbd835f565d950d03c31109e277c4a7/d4183c7134b4794f517fbfbc3cf8e9f3521c45b33026e3448bb5dca1fcbd56b8/abc-1767256598153-4d43c316.json",
+        "verified": true,
+        "signingKey": {
+          "alias": "evd-key-20251230-150302"
+        },
+        "subject": {
+          "sha256": "d4183c7134b4794f517fbfbc3cf8e9f3521c45b33026e3448bb5dca1fcbd56b8"
+        },
+        "createdBy": "slash",
+        "createdAt": "2026-01-01T08:36:37.827Z"
+      },
+      {
+        "predicateSlug": "in-toto-test-result",
+        "predicateType": "https://in-toto.io/attestation/test-result/v0.1",
+        "downloadPath": "slash-maven-dev-local/.evidence/224e4b9141290c193abc230c02af76cc3dbd835f565d950d03c31109e277c4a7/d4183c7134b4794f517fbfbc3cf8e9f3521c45b33026e3448bb5dca1fcbd56b8/in-toto-test-result-1767260443829-183778fc.json",
+        "verified": true,
+        "signingKey": {
+          "alias": "evd-key-20251230-150302"
+        },
+        "subject": {
+          "sha256": "d4183c7134b4794f517fbfbc3cf8e9f3521c45b33026e3448bb5dca1fcbd56b8"
+        },
+        "createdBy": "slash",
+        "createdAt": "2026-01-01T09:40:43.455Z"
+      }
+    ]
+  }
+}

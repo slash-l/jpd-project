@@ -1,0 +1,9 @@
+README.md
+setup.py
+my_pkg/__init__.py
+my_pkg/utils.py
+slash_python_pkg.egg-info/PKG-INFO
+slash_python_pkg.egg-info/SOURCES.txt
+slash_python_pkg.egg-info/dependency_links.txt
+slash_python_pkg.egg-info/requires.txt
+slash_python_pkg.egg-info/top_level.txt

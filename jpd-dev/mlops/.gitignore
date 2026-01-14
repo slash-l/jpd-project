@@ -1,0 +1,7 @@
+*.safetensors
+**/*.safetensors
+**/*.pkl
+*.tar.gz
+**/*.tar.gz
+*.zip
+**/*.zip

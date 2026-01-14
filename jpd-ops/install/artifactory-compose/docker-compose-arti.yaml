@@ -1,0 +1,13 @@
+services:
+  artifactory:
+    image: releases-docker.jfrog.io/jfrog/artifactory-pro:7.111.11
+    container_name: artifactory
+    ports:
+      - "8082:8082"   # internal API port only
+      - "8081:8081"
+    volumes:
+      - $JFROG_HOME/artifactory/var:/var/opt/jfrog/artifactory
+      - ./master.key:/var/opt/jfrog/artifactory/etc/security/master.key
+      - ./system.yaml:/var/opt/jfrog/artifactory/etc/system.yaml
+
+

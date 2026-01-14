@@ -1,0 +1,16 @@
+{
+    "name": "slash-after-download-worker",
+    "description": "Run a script on AFTER_DOWNLOAD",
+    "filterCriteria": {
+        "artifactFilterCriteria": {
+            "repoKeys": ["example-repo-local"]
+        }
+    },
+    "secrets": {},
+    "sourceCodePath": "./worker.ts",
+    "action": "AFTER_DOWNLOAD",
+    "enabled": false,
+    "debug": false,
+    "projectKey": "",
+    "application": "artifactory"
+}

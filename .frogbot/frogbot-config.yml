@@ -1,0 +1,24 @@
+- params:
+    git:
+      repoName: jpd-project
+      branches:
+        - main
+
+      #aggregateFixes: true
+
+    scan:
+      projects:
+        - workingDirs:
+            - jpd-dev/npm/app-npm/backend/
+        - installCommand: npm install
+        - pathExclusions:
+          - "*node_modules*"
+          - "*target*"
+          - "*venv*"
+          - "*test*"
+        - repository: "slash-npm-virtual"
+
+
+
+
+

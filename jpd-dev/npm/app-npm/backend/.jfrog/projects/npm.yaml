@@ -1,0 +1,8 @@
+version: 1
+type: npm
+resolver:
+    repo: slash-npm-virtual
+    serverId: demo-jfrogchina
+deployer:
+    repo: slash-npm-virtual
+    serverId: demo-jfrogchina

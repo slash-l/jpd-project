@@ -1,0 +1,15 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '17.0'
+
+# source "https://demo.jfrogchina.com/artifactory/api/pods/slash-cocoapods-remote"
+source "https://soleng.jfrog.io/artifactory/api/pods/slash-cocoapods-virtual"
+
+target 'HelloCocoaPods' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for HelloCocoaPods
+
+  # 依赖一个外部组件 Alamofire
+  pod 'Alamofire', '~> 5.8'
+end

@@ -1,0 +1,96 @@
+plugins {
+	id 'java-library'
+	id 'war'
+	id 'maven-publish' 
+	id 'org.springframework.boot' version '3.5.4'
+	id 'io.spring.dependency-management' version '1.1.7'
+	id("com.jfrog.artifactory") version "6.+"
+}
+
+group = 'com.example'
+version = '0.1.1-SNAPSHOT'
+description = 'Gradle Demo project for Spring Boot'
+
+allprojects {
+
+    repositories {
+        maven {
+            url = "${artifactory_contextUrl}/slash-gradle-virtual"
+			credentials {
+                username = "${artifactory_user}"
+                password = "${artifactory_password}"
+            }
+        }
+    }
+}
+
+java {
+	toolchain {
+		languageVersion = JavaLanguageVersion.of(17)
+	}
+}
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+        }
+    }
+}
+
+artifactoryPublish {
+    publications('ALL_PUBLICATIONS')
+
+    properties = ['qa.level': 'basic', 'dev.team': 'core']
+    // In Groovy format, properties can also be defined with a closure in the format: configName artifactSpec, key1:val1, key2:val2
+    properties {
+        simpleFile '**:**:**:*@*', simpleFile: 'only on settings file'
+    }
+
+    skip = true
+    publishPom = false
+    publishIvy = false
+    moduleType = 'GRADLE'
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+
+	// https://mvnrepository.com/artifact/com.alibaba/fastjson
+	implementation("com.alibaba:fastjson:1.2.24")
+}
+
+artifactory {
+	clientConfig.info.setProject('slashpro')
+
+    contextUrl = "${artifactory_contextUrl}"   //The base Artifactory URL if not overridden by the publisher/resolver
+    publish {
+        repository {
+            repoKey = 'slash-gradle-dev-local'
+            username = "${artifactory_user}"
+            password = "${artifactory_password}"
+        }
+		defaults {
+            // Reference to Gradle publications defined in the build script.
+            // This is how we tell the Artifactory Plugin which artifacts should be
+            // published to Artifactory.
+            publications('mavenJava')
+            publishArtifacts = true
+            // Properties to be attached to the published artifacts.
+            properties = ['qa.level': 'basic', 'dev.team' : 'core']
+            // Publish generated POM files to Artifactory (true by default)
+            publishPom = true
+        }
+    }
+	
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}
+
+
+

@@ -1,0 +1,941 @@
+Build started 8/8/2025 2:13:29 PM.
+     0>Process = "/Users/jingyil/.dotnet/dotnet"
+       MSBuild executable path = "/Users/jingyil/.dotnet/sdk/8.0.413/MSBuild.dll"
+       Command line arguments = "/Users/jingyil/.dotnet/sdk/8.0.413/MSBuild.dll -maxcpucount -verbosity:m -nologo -target:Restore -verbosity:detailed -distributedlogger:Microsoft.DotNet.Tools.MSBuild.MSBuildLogger,/Users/jingyil/.dotnet/sdk/8.0.413/dotnet.dll*Microsoft.DotNet.Tools.MSBuild.MSBuildForwardingLogger,/Users/jingyil/.dotnet/sdk/8.0.413/dotnet.dll"
+       Current directory = "/Users/jingyil/work/jfrog/jpd-dev/jpd-demo-app/nuget/NuGetDemo"
+       MSBuild version = "17.11.38+901dc04e4"
+       Assembly loaded during Evaluation: System.Reflection.Metadata, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (location: /Users/jingyil/.dotnet/shared/Microsoft.NETCore.App/8.0.19/System.Reflection.Metadata.dll, MVID: 428aa3b1-649e-45a6-ae83-e0f8638b5233, AssemblyLoadContext: Default)
+       The SDK "Microsoft.NET.Sdk" was successfully resolved by the "DefaultSdkResolver" resolver to location "/Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/Sdk" and version "".
+       Assembly loaded during Evaluation: Microsoft.NET.StringTools, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (location: /Users/jingyil/.dotnet/sdk/8.0.413/Microsoft.NET.StringTools.dll, MVID: 9846d12f-388c-4e47-9572-97431150909f, AssemblyLoadContext: Default)
+       Property 'MSBuildExtensionsPath' with value '/Users/jingyil/.dotnet/sdk/8.0.413/' expanded from the environment.
+       Property reassignment: $(MSBuildProjectExtensionsPath)="/Users/jingyil/work/jfrog/jpd-dev/jpd-demo-app/nuget/NuGetDemo/obj/" (previous value: "obj\") at /Users/jingyil/.dotnet/sdk/8.0.413/Current/Microsoft.Common.props (60,5)
+       Property 'MSBuildUserExtensionsPath' with value '/Users/jingyil/Library/Application Support/Microsoft\MSBuild' expanded from the environment.
+       Property reassignment: $(AssemblySearchPaths)="{CandidateAssemblyFiles};{HintPathFromItem}" (previous value: "{CandidateAssemblyFiles}") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.props (91,5)
+       Property reassignment: $(AssemblySearchPaths)="{CandidateAssemblyFiles};{HintPathFromItem};{TargetFrameworkDirectory}" (previous value: "{CandidateAssemblyFiles};{HintPathFromItem}") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.props (92,5)
+       Property reassignment: $(AssemblySearchPaths)="{CandidateAssemblyFiles};{HintPathFromItem};{TargetFrameworkDirectory};{RawFileName}" (previous value: "{CandidateAssemblyFiles};{HintPathFromItem};{TargetFrameworkDirectory}") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.props (93,5)
+       The "DefaultSdkResolver" resolver attempted to resolve the SDK "Microsoft.NET.SDK.WorkloadAutoImportPropsLocator".
+       Warnings: null
+       Errors: MSB4276: The default SDK resolver failed to resolve SDK "Microsoft.NET.SDK.WorkloadAutoImportPropsLocator" because directory "/Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.SDK.WorkloadAutoImportPropsLocator/Sdk" did not exist.
+       Assembly loaded during Evaluation: Microsoft.NET.Sdk.WorkloadMSBuildSdkResolver, Version=8.0.413.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35 (location: /Users/jingyil/.dotnet/sdk/8.0.413/Microsoft.NET.Sdk.WorkloadMSBuildSdkResolver.dll, MVID: adaa7b17-7e5b-4b65-b0f3-40dfaac0400d, AssemblyLoadContext: MSBuild plugin /Users/jingyil/.dotnet/sdk/8.0.413/Microsoft.NET.Sdk.WorkloadMSBuildSdkResolver.dll)
+       Assembly loaded during Evaluation: Microsoft.Build.NuGetSdkResolver, Version=6.11.1.2, Culture=neutral, PublicKeyToken=31bf3856ad364e35 (location: /Users/jingyil/.dotnet/sdk/8.0.413/Microsoft.Build.NuGetSdkResolver.dll, MVID: ae254ffe-3ea7-4bba-8a74-0bd55e8cfe87, AssemblyLoadContext: MSBuild plugin /Users/jingyil/.dotnet/sdk/8.0.413/Microsoft.Build.NuGetSdkResolver.dll)
+       Assembly loaded during Evaluation: Microsoft.DotNet.Cli.Utils, Version=8.0.413.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 (location: /Users/jingyil/.dotnet/sdk/8.0.413/Microsoft.DotNet.Cli.Utils.dll, MVID: 0d621583-22b2-4bf3-9171-0531f05a11c8, AssemblyLoadContext: MSBuild plugin /Users/jingyil/.dotnet/sdk/8.0.413/Microsoft.NET.Sdk.WorkloadMSBuildSdkResolver.dll)
+       Assembly loaded during Evaluation: Microsoft.NET.Sdk.WorkloadManifestReader, Version=8.0.413.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 (location: /Users/jingyil/.dotnet/sdk/8.0.413/Microsoft.NET.Sdk.WorkloadManifestReader.dll, MVID: 4e84f629-8d32-4ec6-abb3-e22d61360583, AssemblyLoadContext: MSBuild plugin /Users/jingyil/.dotnet/sdk/8.0.413/Microsoft.NET.Sdk.WorkloadMSBuildSdkResolver.dll)
+       Assembly loaded during Evaluation: Microsoft.Deployment.DotNet.Releases, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35 (location: /Users/jingyil/.dotnet/sdk/8.0.413/Microsoft.Deployment.DotNet.Releases.dll, MVID: 34f9f9be-a352-437d-b864-e54aac6740dd, AssemblyLoadContext: MSBuild plugin /Users/jingyil/.dotnet/sdk/8.0.413/Microsoft.NET.Sdk.WorkloadMSBuildSdkResolver.dll)
+       Assembly loaded during Evaluation: System.Text.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 (location: /Users/jingyil/.dotnet/shared/Microsoft.NETCore.App/8.0.19/System.Text.Json.dll, MVID: 1f3486b5-cd31-4f2b-b06c-34442acefdd9, AssemblyLoadContext: Default)
+       Assembly loaded during Evaluation: System.Text.Encodings.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 (location: /Users/jingyil/.dotnet/shared/Microsoft.NETCore.App/8.0.19/System.Text.Encodings.Web.dll, MVID: b7b54ad3-71e7-4436-906e-327e8f672611, AssemblyLoadContext: Default)
+       Assembly loaded during Evaluation: System.Numerics.Vectors, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (location: /Users/jingyil/.dotnet/shared/Microsoft.NETCore.App/8.0.19/System.Numerics.Vectors.dll, MVID: 4c6478c6-603a-46de-8a03-d05e1e4fbf87, AssemblyLoadContext: Default)
+       Assembly loaded during Evaluation: System.Reflection.Emit.Lightweight, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (location: /Users/jingyil/.dotnet/shared/Microsoft.NETCore.App/8.0.19/System.Reflection.Emit.Lightweight.dll, MVID: 430aea04-357f-4313-a145-535178463a04, AssemblyLoadContext: Default)
+       Assembly loaded during Evaluation: System.Reflection.Primitives, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (location: /Users/jingyil/.dotnet/shared/Microsoft.NETCore.App/8.0.19/System.Reflection.Primitives.dll, MVID: 93234493-b8d9-40f0-a6a0-e43864719eb2, AssemblyLoadContext: Default)
+       The SDK "Microsoft.NET.SDK.WorkloadAutoImportPropsLocator" was successfully resolved by the "Microsoft.DotNet.MSBuildWorkloadSdkResolver" resolver to location "null" and version "null".
+       Property reassignment: $(TargetsForTfmSpecificContentInPackage)=";PackTool;_PackProjectToolValidation" (previous value: ";PackTool") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.PackProjectTool.props (15,5)
+       Property reassignment: $(OutputType)="Exe" (previous value: "Library") at /Users/jingyil/work/jfrog/jpd-dev/jpd-demo-app/nuget/NuGetDemo/NuGetDemo.csproj (4,5)
+       Property reassignment: $(PublishProfileImported)="false" (previous value: "true") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.ImportPublishProfile.targets (28,5)
+       Assembly loaded during Evaluation: NuGet.Frameworks, Version=6.11.1.2, Culture=neutral, PublicKeyToken=31bf3856ad364e35 (location: /Users/jingyil/.dotnet/sdk/8.0.413/NuGet.Frameworks.dll, MVID: 36fa17a1-abb6-4cce-b85c-dd32a6dcc45f, AssemblyLoadContext: Assembly.LoadFile(/Users/jingyil/.dotnet/sdk/8.0.413/NuGet.Frameworks.dll))
+       Property reassignment: $(TargetPlatformVersion)="" (previous value: "0.0") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.TargetFrameworkInference.targets (69,5)
+       Property reassignment: $(DefaultItemExcludes)=";bin\Debug//**;obj\Debug//**" (previous value: ";bin\Debug//**") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.DefaultOutputPaths.targets (122,5)
+       Property reassignment: $(OutputPath)="bin\Debug/net8.0/" (previous value: "bin\Debug/") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.DefaultOutputPaths.targets (137,5)
+       Property reassignment: $(IntermediateOutputPath)="obj\Debug/net8.0/" (previous value: "obj\Debug/") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.DefaultOutputPaths.targets (142,5)
+       The "DefaultSdkResolver" resolver attempted to resolve the SDK "Microsoft.NET.SDK.WorkloadManifestTargetsLocator".
+       Warnings: null
+       Errors: MSB4276: The default SDK resolver failed to resolve SDK "Microsoft.NET.SDK.WorkloadManifestTargetsLocator" because directory "/Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.SDK.WorkloadManifestTargetsLocator/Sdk" did not exist.
+       The SDK "Microsoft.NET.SDK.WorkloadManifestTargetsLocator" was successfully resolved by the "Microsoft.DotNet.MSBuildWorkloadSdkResolver" resolver to location "/Users/jingyil/.dotnet/sdk-manifests/8.0.100/microsoft.net.sdk.android/34.0.43" and version "null".
+       Property reassignment: $(_FrameworkIdentifierForImplicitDefine)="NET" (previous value: "NETCOREAPP") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.BeforeCommon.targets (187,5)
+       Property reassignment: $(_FrameworkVersionForImplicitDefine)="8_0" (previous value: "8.0") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.BeforeCommon.targets (192,5)
+       Property reassignment: $(CommandLineArgsForDesignTimeEvaluation)="-langversion:12.0 -define:TRACE" (previous value: "-langversion:12.0") at /Users/jingyil/.dotnet/sdk/8.0.413/Roslyn/Microsoft.CSharp.Core.targets (200,5)
+       Assembly loaded during Evaluation: Microsoft.Build.Utilities.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (location: /Users/jingyil/.dotnet/sdk/8.0.413/Microsoft.Build.Utilities.Core.dll, MVID: b1c83561-b77a-4a0c-a944-3153618b546d, AssemblyLoadContext: Default)
+       Property reassignment: $(_DebugSymbolsProduced)="true" (previous value: "false") at /Users/jingyil/.dotnet/sdk/8.0.413/Microsoft.Common.CurrentVersion.targets (175,5)
+       Property reassignment: $(_DocumentationFileProduced)="false" (previous value: "true") at /Users/jingyil/.dotnet/sdk/8.0.413/Microsoft.Common.CurrentVersion.targets (185,5)
+       Property reassignment: $(MSBuildCopyMarkerName)="NuGetDemo.csproj.Up2Date" (previous value: "NuGetDemo.csproj") at /Users/jingyil/.dotnet/sdk/8.0.413/Microsoft.Common.CurrentVersion.targets (393,5)
+       Property reassignment: $(ProcessorArchitecture)="msil" (previous value: "") at /Users/jingyil/.dotnet/sdk/8.0.413/Microsoft.Common.CurrentVersion.targets (541,5)
+       Property reassignment: $(DelaySign)="" (previous value: "false") at /Users/jingyil/.dotnet/sdk/8.0.413/Microsoft.Common.CurrentVersion.targets (580,5)
+       Property 'LocalAppData' with value '/Users/jingyil/Library/Application Support' expanded from the environment.
+       Property reassignment: $(_SGenGenerateSerializationAssembliesConfig)="Auto" (previous value: "") at /Users/jingyil/.dotnet/sdk/8.0.413/Microsoft.Common.CurrentVersion.targets (3896,5)
+       Property reassignment: $(_SGenGenerateSerializationAssembliesConfig)="Off" (previous value: "Auto") at /Users/jingyil/.dotnet/sdk/8.0.413/Microsoft.Common.CurrentVersion.targets (3897,5)
+       Property reassignment: $(_TargetsThatPrepareProjectReferences)="
+             AssignProjectConfiguration;
+             _SplitProjectReferencesByFileExistence
+           " (previous value: "_SplitProjectReferencesByFileExistence") at /Users/jingyil/.dotnet/sdk/8.0.413/Microsoft.Common.CurrentVersion.targets (5099,5)
+       Property 'MSBuildExtensionsPath32' with value '/Users/jingyil/.dotnet/sdk/8.0.413' expanded from the environment.
+       Assembly loaded during Evaluation: System.Threading.Tasks.Parallel, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (location: /Users/jingyil/.dotnet/shared/Microsoft.NETCore.App/8.0.19/System.Threading.Tasks.Parallel.dll, MVID: 7475918c-18e6-45c3-859a-4691c8a60bec, AssemblyLoadContext: Default)
+       Property reassignment: $(ProjectAssetsFile)="/Users/jingyil/work/jfrog/jpd-dev/jpd-demo-app/nuget/NuGetDemo/obj/project.assets.json" (previous value: "/Users/jingyil/work/jfrog/jpd-dev/jpd-demo-app/nuget/NuGetDemo/obj//project.assets.json") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.PackageDependencyResolution.targets (24,5)
+       Property reassignment: $(ProjectAssetsCacheFile)="/Users/jingyil/work/jfrog/jpd-dev/jpd-demo-app/nuget/NuGetDemo/obj/Debug/net8.0/NuGetDemo.assets.cache" (previous value: "obj\Debug/net8.0/NuGetDemo.assets.cache") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.PackageDependencyResolution.targets (29,5)
+       Property reassignment: $(ResolveAssemblyReferencesDependsOn)="
+             
+             ResolveProjectReferences;
+             FindInvalidProjectReferences;
+             GetFrameworkPaths;
+             GetReferenceAssemblyPaths;
+             PrepareForBuild;
+             ResolveSDKReferences;
+             ExpandSDKReferences;
+           ;
+             ResolvePackageDependenciesForBuild;
+             _HandlePackageFileConflicts;
+           " (previous value: "
+             ResolveProjectReferences;
+             FindInvalidProjectReferences;
+             GetFrameworkPaths;
+             GetReferenceAssemblyPaths;
+             PrepareForBuild;
+             ResolveSDKReferences;
+             ExpandSDKReferences;
+           ") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.PackageDependencyResolution.targets (80,5)
+       Property reassignment: $(PrepareResourcesDependsOn)="
+             ResolvePackageDependenciesForBuild;
+             _HandlePackageFileConflicts;
+             
+             ;
+             PrepareResourceNames;
+             ResGen;
+             CompileLicxFiles
+           
+           " (previous value: "
+             ;
+             PrepareResourceNames;
+             ResGen;
+             CompileLicxFiles
+           ") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.PackageDependencyResolution.targets (86,5)
+       Property reassignment: $(DefaultItemExcludes)=";bin\Debug//**;obj\Debug//**;bin\/**" (previous value: ";bin\Debug//**;obj\Debug//**") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.DefaultItems.targets (27,5)
+       Property reassignment: $(DefaultItemExcludes)=";bin\Debug//**;obj\Debug//**;bin\/**;obj\/**" (previous value: ";bin\Debug//**;obj\Debug//**;bin\/**") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.DefaultItems.targets (29,5)
+       Property reassignment: $(DefaultItemExcludes)=";bin\Debug//**;obj\Debug//**;bin\/**;obj\/**;**/*.user" (previous value: ";bin\Debug//**;obj\Debug//**;bin\/**;obj\/**") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.DefaultItems.targets (32,5)
+       Property reassignment: $(DefaultItemExcludes)=";bin\Debug//**;obj\Debug//**;bin\/**;obj\/**;**/*.user;**/*.*proj" (previous value: ";bin\Debug//**;obj\Debug//**;bin\/**;obj\/**;**/*.user") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.DefaultItems.targets (33,5)
+       Property reassignment: $(DefaultItemExcludes)=";bin\Debug//**;obj\Debug//**;bin\/**;obj\/**;**/*.user;**/*.*proj;**/*.sln" (previous value: ";bin\Debug//**;obj\Debug//**;bin\/**;obj\/**;**/*.user;**/*.*proj") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.DefaultItems.targets (34,5)
+       Property reassignment: $(DefaultItemExcludes)=";bin\Debug//**;obj\Debug//**;bin\/**;obj\/**;**/*.user;**/*.*proj;**/*.sln;**/*.vssscc" (previous value: ";bin\Debug//**;obj\Debug//**;bin\/**;obj\/**;**/*.user;**/*.*proj;**/*.sln") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.DefaultItems.targets (35,5)
+       Property reassignment: $(DefaultItemExcludes)=";bin\Debug//**;obj\Debug//**;bin\/**;obj\/**;**/*.user;**/*.*proj;**/*.sln;**/*.vssscc;**/.DS_Store" (previous value: ";bin\Debug//**;obj\Debug//**;bin\/**;obj\/**;**/*.user;**/*.*proj;**/*.sln;**/*.vssscc") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.DefaultItems.targets (36,5)
+       Property reassignment: $(ResolveAssemblyReferencesDependsOn)="
+             
+             
+             ResolveProjectReferences;
+             FindInvalidProjectReferences;
+             GetFrameworkPaths;
+             GetReferenceAssemblyPaths;
+             PrepareForBuild;
+             ResolveSDKReferences;
+             ExpandSDKReferences;
+           ;
+             ResolvePackageDependenciesForBuild;
+             _HandlePackageFileConflicts;
+           ;
+             ResolveTargetingPackAssets;
+           " (previous value: "
+             
+             ResolveProjectReferences;
+             FindInvalidProjectReferences;
+             GetFrameworkPaths;
+             GetReferenceAssemblyPaths;
+             PrepareForBuild;
+             ResolveSDKReferences;
+             ExpandSDKReferences;
+           ;
+             ResolvePackageDependenciesForBuild;
+             _HandlePackageFileConflicts;
+           ") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.FrameworkReferenceResolution.targets (14,5)
+       Property reassignment: $(_GenerateRuntimeConfigurationPropertyInputsCache)="/Users/jingyil/work/jfrog/jpd-dev/jpd-demo-app/nuget/NuGetDemo/obj/Debug/net8.0/NuGetDemo.genruntimeconfig.cache" (previous value: "obj\Debug/net8.0/NuGetDemo.genruntimeconfig.cache") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.targets (44,5)
+       Property reassignment: $(_GeneratePublishDependencyFilePropertyInputsCache)="/Users/jingyil/work/jfrog/jpd-dev/jpd-demo-app/nuget/NuGetDemo/obj/Debug/net8.0/NuGetDemo.genpublishdeps.cache" (previous value: "obj\Debug/net8.0/NuGetDemo.genpublishdeps.cache") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.targets (46,5)
+       Property reassignment: $(_GenerateSingleFileBundlePropertyInputsCache)="/Users/jingyil/work/jfrog/jpd-dev/jpd-demo-app/nuget/NuGetDemo/obj/Debug/net8.0/NuGetDemo.genbundle.cache" (previous value: "obj\Debug/net8.0/NuGetDemo.genbundle.cache") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.targets (48,5)
+       Property reassignment: $(GenerateRuntimeConfigDevFile)="false" (previous value: "true") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.targets (81,5)
+       Property 'HOME' with value '/Users/jingyil' expanded from the environment.
+       Property reassignment: $(_DefaultUserProfileRuntimeStorePath)="/Users/jingyil/.dotnet/store" (previous value: "/Users/jingyil") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.targets (98,5)
+       Property reassignment: $(AvailablePlatforms)="Any CPU,x86,x64,ARM32" (previous value: "Any CPU,x86,x64") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.targets (136,5)
+       Property reassignment: $(AvailablePlatforms)="Any CPU,x86,x64,ARM32,ARM64" (previous value: "Any CPU,x86,x64,ARM32") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.targets (140,5)
+       Property reassignment: $(CoreBuildDependsOn)="
+             _CheckForBuildWithNoBuild;
+             
+             BuildOnlySettings;
+             PrepareForBuild;
+             PreBuildEvent;
+             ResolveReferences;
+             PrepareResources;
+             ResolveKeySource;
+             Compile;
+             ExportWindowsMDFile;
+             UnmanagedUnregistration;
+             GenerateSerializationAssemblies;
+             CreateSatelliteAssemblies;
+             GenerateManifests;
+             GetTargetPath;
+             PrepareForRun;
+             UnmanagedRegistration;
+             IncrementalClean;
+             PostBuildEvent
+           ;
+             GenerateBuildDependencyFile;
+             GenerateBuildRuntimeConfigurationFiles
+           " (previous value: "
+             BuildOnlySettings;
+             PrepareForBuild;
+             PreBuildEvent;
+             ResolveReferences;
+             PrepareResources;
+             ResolveKeySource;
+             Compile;
+             ExportWindowsMDFile;
+             UnmanagedUnregistration;
+             GenerateSerializationAssemblies;
+             CreateSatelliteAssemblies;
+             GenerateManifests;
+             GetTargetPath;
+             PrepareForRun;
+             UnmanagedRegistration;
+             IncrementalClean;
+             PostBuildEvent
+           ") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.targets (197,5)
+       Property reassignment: $(CoreCleanDependsOn)="
+             _SdkBeforeClean;
+             
+           " (previous value: "") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.targets (206,5)
+       Property reassignment: $(RebuildDependsOn)="
+             _SdkBeforeRebuild;
+             
+             BeforeRebuild;
+             Clean;
+             Build;
+             AfterRebuild;
+           
+           " (previous value: "
+             BeforeRebuild;
+             Clean;
+             Build;
+             AfterRebuild;
+           ") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.targets (213,5)
+       Property reassignment: $(CompileDependsOn)="
+             
+             ResolveReferences;
+             ResolveKeySource;
+             SetWin32ManifestProperties;
+             _SetPreferNativeArm64Win32ManifestProperties;
+             FindReferenceAssembliesForReferences;
+             _GenerateCompileInputs;
+             BeforeCompile;
+             _TimeStampBeforeCompile;
+             _GenerateCompileDependencyCache;
+             CoreCompile;
+             _TimeStampAfterCompile;
+             AfterCompile;
+           ;
+             _CreateAppHost;
+             _CreateComHost;
+             _GetIjwHostPaths;
+           " (previous value: "
+             ResolveReferences;
+             ResolveKeySource;
+             SetWin32ManifestProperties;
+             _SetPreferNativeArm64Win32ManifestProperties;
+             FindReferenceAssembliesForReferences;
+             _GenerateCompileInputs;
+             BeforeCompile;
+             _TimeStampBeforeCompile;
+             _GenerateCompileDependencyCache;
+             CoreCompile;
+             _TimeStampAfterCompile;
+             AfterCompile;
+           ") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.targets (679,5)
+       Property reassignment: $(CreateSatelliteAssembliesDependsOn)="
+             
+             ;
+             _GenerateSatelliteAssemblyInputs;
+             ComputeIntermediateSatelliteAssemblies;
+             GenerateSatelliteAssemblies
+           ;
+             CoreGenerateSatelliteAssemblies
+           " (previous value: "
+             ;
+             _GenerateSatelliteAssemblyInputs;
+             ComputeIntermediateSatelliteAssemblies;
+             GenerateSatelliteAssemblies
+           ") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.targets (1065,5)
+       Property reassignment: $(SourceLinkUrlInitializerTargets)=";_InitializeGitHubSourceLinkUrl;_InitializeGitLabSourceLinkUrl" (previous value: ";_InitializeGitHubSourceLinkUrl") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.SourceLink.GitLab/build/Microsoft.SourceLink.GitLab.targets (12,5)
+       Property reassignment: $(SourceControlManagerUrlTranslationTargets)=";TranslateGitHubUrlsInSourceControlInformation;TranslateGitLabUrlsInSourceControlInformation" (previous value: ";TranslateGitHubUrlsInSourceControlInformation") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.SourceLink.GitLab/build/Microsoft.SourceLink.GitLab.targets (13,5)
+       Property reassignment: $(SourceLinkUrlInitializerTargets)=";_InitializeGitHubSourceLinkUrl;_InitializeGitLabSourceLinkUrl;_InitializeAzureReposGitSourceLinkUrl" (previous value: ";_InitializeGitHubSourceLinkUrl;_InitializeGitLabSourceLinkUrl") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.SourceLink.AzureRepos.Git/build/Microsoft.SourceLink.AzureRepos.Git.targets (12,5)
+       Property reassignment: $(SourceControlManagerUrlTranslationTargets)=";TranslateGitHubUrlsInSourceControlInformation;TranslateGitLabUrlsInSourceControlInformation;TranslateAzureReposGitUrlsInSourceControlInformation" (previous value: ";TranslateGitHubUrlsInSourceControlInformation;TranslateGitLabUrlsInSourceControlInformation") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.SourceLink.AzureRepos.Git/build/Microsoft.SourceLink.AzureRepos.Git.targets (13,5)
+       Property reassignment: $(SourceLinkUrlInitializerTargets)=";_InitializeGitHubSourceLinkUrl;_InitializeGitLabSourceLinkUrl;_InitializeAzureReposGitSourceLinkUrl;_InitializeBitbucketGitSourceLinkUrl" (previous value: ";_InitializeGitHubSourceLinkUrl;_InitializeGitLabSourceLinkUrl;_InitializeAzureReposGitSourceLinkUrl") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.SourceLink.Bitbucket.Git/build/Microsoft.SourceLink.Bitbucket.Git.targets (12,5)
+       Property reassignment: $(SourceControlManagerUrlTranslationTargets)=";TranslateGitHubUrlsInSourceControlInformation;TranslateGitLabUrlsInSourceControlInformation;TranslateAzureReposGitUrlsInSourceControlInformation;TranslateBitbucketGitUrlsInSourceControlInformation" (previous value: ";TranslateGitHubUrlsInSourceControlInformation;TranslateGitLabUrlsInSourceControlInformation;TranslateAzureReposGitUrlsInSourceControlInformation") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.SourceLink.Bitbucket.Git/build/Microsoft.SourceLink.Bitbucket.Git.targets (13,5)
+       Property reassignment: $(DesignerRuntimeImplementationProjectOutputGroupDependsOn)="
+             
+             ;
+             
+             ;
+             BuildOnlySettings;
+             PrepareForBuild;
+             AssignTargetPaths;
+             ResolveReferences
+           
+           ;
+             _GenerateDesignerDepsFile;
+             _GenerateDesignerRuntimeConfigFile;
+             GetCopyToOutputDirectoryItems;
+             _GatherDesignerShadowCopyFiles;
+           " (previous value: "
+             ;
+             
+             ;
+             BuildOnlySettings;
+             PrepareForBuild;
+             AssignTargetPaths;
+             ResolveReferences
+           
+           ") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.DesignerSupport.targets (21,5)
+       Property reassignment: $(_GenerateToolsSettingsFileCacheFile)="/Users/jingyil/work/jfrog/jpd-dev/jpd-demo-app/nuget/NuGetDemo/obj/Debug/net8.0/NuGetDemo.toolssettingsinput.cache" (previous value: "obj\Debug/net8.0/NuGetDemo.toolssettingsinput.cache") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.PackTool.targets (68,5)
+       Property reassignment: $(_ShimInputCacheFile)="/Users/jingyil/work/jfrog/jpd-dev/jpd-demo-app/nuget/NuGetDemo/obj/Debug/net8.0/NuGetDemo.shiminput.cache" (previous value: "obj\Debug/net8.0/NuGetDemo.shiminput.cache") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.PackTool.targets (137,5)
+       Property reassignment: $(_ShimCreatedSentinelFile)="/Users/jingyil/work/jfrog/jpd-dev/jpd-demo-app/nuget/NuGetDemo/obj/Debug/net8.0/NuGetDemo.shimcreated.sentinel" (previous value: "obj\Debug/net8.0/NuGetDemo.shimcreated.sentinel") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.PackTool.targets (139,5)
+       Property reassignment: $(DefineConstants)="TRACE;DEBUG" (previous value: "TRACE") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.CSharp.targets (31,5)
+       Property reassignment: $(DefineConstants)="TRACE;DEBUG;NET;NET8_0;NETCOREAPP" (previous value: "TRACE;DEBUG") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.CSharp.targets (34,5)
+       Property reassignment: $(WarningsAsErrors)=";NU1605;SYSLIB0011" (previous value: ";NU1605") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.CSharp.targets (48,5)
+       Property reassignment: $(PackageDescription)="Package Description" (previous value: "") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/NuGet.Build.Tasks.Pack/build/NuGet.Build.Tasks.Pack.targets (34,5)
+       Property reassignment: $(GenerateNuspecDependsOn)="Build;_LoadPackInputItems; _GetTargetFrameworksOutput; _WalkEachTargetPerFramework; _GetPackageFiles; " (previous value: "_LoadPackInputItems; _GetTargetFrameworksOutput; _WalkEachTargetPerFramework; _GetPackageFiles; ") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/NuGet.Build.Tasks.Pack/build/NuGet.Build.Tasks.Pack.targets (59,5)
+       Property reassignment: $(_IsNotSetContainersTargetsDir)="true" (previous value: "false") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/Sdk/Sdk.targets (59,5)
+       Property reassignment: $(_IsSDKContainerAllowedVersion)="true" (previous value: "false") at /Users/jingyil/.dotnet/sdk/8.0.413/Containers/build/Microsoft.NET.Build.Containers.targets (5,5)
+       Property reassignment: $(_ContainerIsTargetingNet8TFM)="true" (previous value: "false") at /Users/jingyil/.dotnet/sdk/8.0.413/Containers/build/Microsoft.NET.Build.Containers.targets (15,5)
+       Assembly loaded during Evaluation: System.Reflection.Emit.ILGeneration, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (location: /Users/jingyil/.dotnet/shared/Microsoft.NETCore.App/8.0.19/System.Reflection.Emit.ILGeneration.dll, MVID: ded6444c-e43d-4473-bdb2-ec9961538107, AssemblyLoadContext: Default)
+       Overriding target "ResolveFrameworkReferences" in project "/Users/jingyil/.dotnet/sdk/8.0.413/Microsoft.Common.CurrentVersion.targets" with target "ResolveFrameworkReferences" from project "/Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.FrameworkReferenceResolution.targets".
+       Overriding target "Run" in project "/Users/jingyil/.dotnet/sdk/8.0.413/Microsoft.Common.CurrentVersion.targets" with target "Run" from project "/Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.targets".
+       Overriding target "GenerateSupportedTargetFrameworkAlias" in project "/Users/jingyil/.dotnet/sdk/8.0.413/Microsoft.Common.CurrentVersion.targets" with target "GenerateSupportedTargetFrameworkAlias" from project "/Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.targets".
+       Overriding target "GetReferenceAssemblyPaths" in project "/Users/jingyil/.dotnet/sdk/8.0.413/Microsoft.Common.CurrentVersion.targets" with target "GetReferenceAssemblyPaths" from project "/Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.DisableStandardFrameworkResolution.targets".
+       Overriding target "GetFrameworkPaths" in project "/Users/jingyil/.dotnet/sdk/8.0.413/Microsoft.Common.CurrentVersion.targets" with target "GetFrameworkPaths" from project "/Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.DisableStandardFrameworkResolution.targets".
+       Overriding target "DesignerRuntimeImplementationProjectOutputGroup" in project "/Users/jingyil/.dotnet/sdk/8.0.413/Microsoft.Common.CurrentVersion.targets" with target "DesignerRuntimeImplementationProjectOutputGroup" from project "/Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.DesignerSupport.targets".
+       Overriding target "Publish" in project "/Users/jingyil/.dotnet/sdk/8.0.413/Microsoft.Common.CurrentVersion.targets" with target "Publish" from project "/Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Publish.targets".
+       Overriding target "ResolveReadyToRunCompilers" in project "/Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.CrossGen.targets" with target "ResolveReadyToRunCompilers" from project "/Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Publish.targets".
+       Overriding target "GetCopyToPublishDirectoryItems" in project "/Users/jingyil/.dotnet/sdk/8.0.413/Microsoft.Common.CurrentVersion.targets" with target "GetCopyToPublishDirectoryItems" from project "/Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Publish.targets".
+     1>Project "/Users/jingyil/work/jfrog/jpd-dev/jpd-demo-app/nuget/NuGetDemo/NuGetDemo.csproj" on node 1 (Restore target(s)).
+     1>Target "_LoadRestoreGraphEntryPoints" in file "/Users/jingyil/.dotnet/sdk/8.0.413/NuGet.targets" from project "/Users/jingyil/work/jfrog/jpd-dev/jpd-demo-app/nuget/NuGetDemo/NuGetDemo.csproj" (target "_FilterRestoreGraphProjectInputItems" depends on it):
+     1>Task "GetRestoreSolutionProjectsTask" skipped, due to false condition; ( $(MSBuildProjectFullPath.EndsWith('.metaproj')) == 'true' AND @(RestoreGraphProjectInputItems) == '' ) was evaluated as ( False == 'true' AND /Users/jingyil/work/jfrog/jpd-dev/jpd-demo-app/nuget/NuGetDemo/NuGetDemo.csproj == '' ).
+     1>Done building target "_LoadRestoreGraphEntryPoints" in project "NuGetDemo.csproj".
+     1>Target "_FilterRestoreGraphProjectInputItems" in file "/Users/jingyil/.dotnet/sdk/8.0.413/NuGet.targets" from project "/Users/jingyil/work/jfrog/jpd-dev/jpd-demo-app/nuget/NuGetDemo/NuGetDemo.csproj" (target "_GenerateRestoreGraph" depends on it):
+       Using "RemoveDuplicates" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+       Task "RemoveDuplicates"
+       Done executing task "RemoveDuplicates".
+       Using "MSBuild" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+       Task "MSBuild"
+         Global Properties:
+           ExcludeRestorePackageImports=true
+     0>Property 'MSBuildExtensionsPath' with value '/Users/jingyil/.dotnet/sdk/8.0.413/' expanded from the environment.
+       Property reassignment: $(MSBuildProjectExtensionsPath)="/Users/jingyil/work/jfrog/jpd-dev/jpd-demo-app/nuget/NuGetDemo/obj/" (previous value: "obj\") at /Users/jingyil/.dotnet/sdk/8.0.413/Current/Microsoft.Common.props (60,5)
+       Property 'MSBuildUserExtensionsPath' with value '/Users/jingyil/Library/Application Support/Microsoft\MSBuild' expanded from the environment.
+       Property reassignment: $(AssemblySearchPaths)="{CandidateAssemblyFiles};{HintPathFromItem}" (previous value: "{CandidateAssemblyFiles}") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.props (91,5)
+       Property reassignment: $(AssemblySearchPaths)="{CandidateAssemblyFiles};{HintPathFromItem};{TargetFrameworkDirectory}" (previous value: "{CandidateAssemblyFiles};{HintPathFromItem}") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.props (92,5)
+       Property reassignment: $(AssemblySearchPaths)="{CandidateAssemblyFiles};{HintPathFromItem};{TargetFrameworkDirectory};{RawFileName}" (previous value: "{CandidateAssemblyFiles};{HintPathFromItem};{TargetFrameworkDirectory}") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.props (93,5)
+       Property reassignment: $(TargetsForTfmSpecificContentInPackage)=";PackTool;_PackProjectToolValidation" (previous value: ";PackTool") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.PackProjectTool.props (15,5)
+       Property reassignment: $(OutputType)="Exe" (previous value: "Library") at /Users/jingyil/work/jfrog/jpd-dev/jpd-demo-app/nuget/NuGetDemo/NuGetDemo.csproj (4,5)
+       Property reassignment: $(PublishProfileImported)="false" (previous value: "true") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.ImportPublishProfile.targets (28,5)
+       Property reassignment: $(TargetPlatformVersion)="" (previous value: "0.0") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.TargetFrameworkInference.targets (69,5)
+       Property reassignment: $(DefaultItemExcludes)=";bin\Debug//**;obj\Debug//**" (previous value: ";bin\Debug//**") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.DefaultOutputPaths.targets (122,5)
+       Property reassignment: $(OutputPath)="bin\Debug/net8.0/" (previous value: "bin\Debug/") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.DefaultOutputPaths.targets (137,5)
+       Property reassignment: $(IntermediateOutputPath)="obj\Debug/net8.0/" (previous value: "obj\Debug/") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.DefaultOutputPaths.targets (142,5)
+       Property reassignment: $(_FrameworkIdentifierForImplicitDefine)="NET" (previous value: "NETCOREAPP") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.BeforeCommon.targets (187,5)
+       Property reassignment: $(_FrameworkVersionForImplicitDefine)="8_0" (previous value: "8.0") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.BeforeCommon.targets (192,5)
+       Property reassignment: $(CommandLineArgsForDesignTimeEvaluation)="-langversion:12.0 -define:TRACE" (previous value: "-langversion:12.0") at /Users/jingyil/.dotnet/sdk/8.0.413/Roslyn/Microsoft.CSharp.Core.targets (200,5)
+       Property reassignment: $(_DebugSymbolsProduced)="true" (previous value: "false") at /Users/jingyil/.dotnet/sdk/8.0.413/Microsoft.Common.CurrentVersion.targets (175,5)
+       Property reassignment: $(_DocumentationFileProduced)="false" (previous value: "true") at /Users/jingyil/.dotnet/sdk/8.0.413/Microsoft.Common.CurrentVersion.targets (185,5)
+       Property reassignment: $(MSBuildCopyMarkerName)="NuGetDemo.csproj.Up2Date" (previous value: "NuGetDemo.csproj") at /Users/jingyil/.dotnet/sdk/8.0.413/Microsoft.Common.CurrentVersion.targets (393,5)
+       Property reassignment: $(ProcessorArchitecture)="msil" (previous value: "") at /Users/jingyil/.dotnet/sdk/8.0.413/Microsoft.Common.CurrentVersion.targets (541,5)
+       Property reassignment: $(DelaySign)="" (previous value: "false") at /Users/jingyil/.dotnet/sdk/8.0.413/Microsoft.Common.CurrentVersion.targets (580,5)
+       Property 'LocalAppData' with value '/Users/jingyil/Library/Application Support' expanded from the environment.
+       Property reassignment: $(_SGenGenerateSerializationAssembliesConfig)="Auto" (previous value: "") at /Users/jingyil/.dotnet/sdk/8.0.413/Microsoft.Common.CurrentVersion.targets (3896,5)
+       Property reassignment: $(_SGenGenerateSerializationAssembliesConfig)="Off" (previous value: "Auto") at /Users/jingyil/.dotnet/sdk/8.0.413/Microsoft.Common.CurrentVersion.targets (3897,5)
+       Property reassignment: $(_TargetsThatPrepareProjectReferences)="
+             AssignProjectConfiguration;
+             _SplitProjectReferencesByFileExistence
+           " (previous value: "_SplitProjectReferencesByFileExistence") at /Users/jingyil/.dotnet/sdk/8.0.413/Microsoft.Common.CurrentVersion.targets (5099,5)
+       Property 'MSBuildExtensionsPath32' with value '/Users/jingyil/.dotnet/sdk/8.0.413' expanded from the environment.
+       Property reassignment: $(ProjectAssetsFile)="/Users/jingyil/work/jfrog/jpd-dev/jpd-demo-app/nuget/NuGetDemo/obj/project.assets.json" (previous value: "/Users/jingyil/work/jfrog/jpd-dev/jpd-demo-app/nuget/NuGetDemo/obj//project.assets.json") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.PackageDependencyResolution.targets (24,5)
+       Property reassignment: $(ProjectAssetsCacheFile)="/Users/jingyil/work/jfrog/jpd-dev/jpd-demo-app/nuget/NuGetDemo/obj/Debug/net8.0/NuGetDemo.assets.cache" (previous value: "obj\Debug/net8.0/NuGetDemo.assets.cache") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.PackageDependencyResolution.targets (29,5)
+       Property reassignment: $(ResolveAssemblyReferencesDependsOn)="
+             
+             ResolveProjectReferences;
+             FindInvalidProjectReferences;
+             GetFrameworkPaths;
+             GetReferenceAssemblyPaths;
+             PrepareForBuild;
+             ResolveSDKReferences;
+             ExpandSDKReferences;
+           ;
+             ResolvePackageDependenciesForBuild;
+             _HandlePackageFileConflicts;
+           " (previous value: "
+             ResolveProjectReferences;
+             FindInvalidProjectReferences;
+             GetFrameworkPaths;
+             GetReferenceAssemblyPaths;
+             PrepareForBuild;
+             ResolveSDKReferences;
+             ExpandSDKReferences;
+           ") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.PackageDependencyResolution.targets (80,5)
+       Property reassignment: $(PrepareResourcesDependsOn)="
+             ResolvePackageDependenciesForBuild;
+             _HandlePackageFileConflicts;
+             
+             ;
+             PrepareResourceNames;
+             ResGen;
+             CompileLicxFiles
+           
+           " (previous value: "
+             ;
+             PrepareResourceNames;
+             ResGen;
+             CompileLicxFiles
+           ") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.PackageDependencyResolution.targets (86,5)
+       Property reassignment: $(DefaultItemExcludes)=";bin\Debug//**;obj\Debug//**;bin\/**" (previous value: ";bin\Debug//**;obj\Debug//**") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.DefaultItems.targets (27,5)
+       Property reassignment: $(DefaultItemExcludes)=";bin\Debug//**;obj\Debug//**;bin\/**;obj\/**" (previous value: ";bin\Debug//**;obj\Debug//**;bin\/**") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.DefaultItems.targets (29,5)
+       Property reassignment: $(DefaultItemExcludes)=";bin\Debug//**;obj\Debug//**;bin\/**;obj\/**;**/*.user" (previous value: ";bin\Debug//**;obj\Debug//**;bin\/**;obj\/**") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.DefaultItems.targets (32,5)
+       Property reassignment: $(DefaultItemExcludes)=";bin\Debug//**;obj\Debug//**;bin\/**;obj\/**;**/*.user;**/*.*proj" (previous value: ";bin\Debug//**;obj\Debug//**;bin\/**;obj\/**;**/*.user") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.DefaultItems.targets (33,5)
+       Property reassignment: $(DefaultItemExcludes)=";bin\Debug//**;obj\Debug//**;bin\/**;obj\/**;**/*.user;**/*.*proj;**/*.sln" (previous value: ";bin\Debug//**;obj\Debug//**;bin\/**;obj\/**;**/*.user;**/*.*proj") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.DefaultItems.targets (34,5)
+       Property reassignment: $(DefaultItemExcludes)=";bin\Debug//**;obj\Debug//**;bin\/**;obj\/**;**/*.user;**/*.*proj;**/*.sln;**/*.vssscc" (previous value: ";bin\Debug//**;obj\Debug//**;bin\/**;obj\/**;**/*.user;**/*.*proj;**/*.sln") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.DefaultItems.targets (35,5)
+       Property reassignment: $(DefaultItemExcludes)=";bin\Debug//**;obj\Debug//**;bin\/**;obj\/**;**/*.user;**/*.*proj;**/*.sln;**/*.vssscc;**/.DS_Store" (previous value: ";bin\Debug//**;obj\Debug//**;bin\/**;obj\/**;**/*.user;**/*.*proj;**/*.sln;**/*.vssscc") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.DefaultItems.targets (36,5)
+       Property reassignment: $(ResolveAssemblyReferencesDependsOn)="
+             
+             
+             ResolveProjectReferences;
+             FindInvalidProjectReferences;
+             GetFrameworkPaths;
+             GetReferenceAssemblyPaths;
+             PrepareForBuild;
+             ResolveSDKReferences;
+             ExpandSDKReferences;
+           ;
+             ResolvePackageDependenciesForBuild;
+             _HandlePackageFileConflicts;
+           ;
+             ResolveTargetingPackAssets;
+           " (previous value: "
+             
+             ResolveProjectReferences;
+             FindInvalidProjectReferences;
+             GetFrameworkPaths;
+             GetReferenceAssemblyPaths;
+             PrepareForBuild;
+             ResolveSDKReferences;
+             ExpandSDKReferences;
+           ;
+             ResolvePackageDependenciesForBuild;
+             _HandlePackageFileConflicts;
+           ") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.FrameworkReferenceResolution.targets (14,5)
+       Property reassignment: $(_GenerateRuntimeConfigurationPropertyInputsCache)="/Users/jingyil/work/jfrog/jpd-dev/jpd-demo-app/nuget/NuGetDemo/obj/Debug/net8.0/NuGetDemo.genruntimeconfig.cache" (previous value: "obj\Debug/net8.0/NuGetDemo.genruntimeconfig.cache") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.targets (44,5)
+       Property reassignment: $(_GeneratePublishDependencyFilePropertyInputsCache)="/Users/jingyil/work/jfrog/jpd-dev/jpd-demo-app/nuget/NuGetDemo/obj/Debug/net8.0/NuGetDemo.genpublishdeps.cache" (previous value: "obj\Debug/net8.0/NuGetDemo.genpublishdeps.cache") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.targets (46,5)
+       Property reassignment: $(_GenerateSingleFileBundlePropertyInputsCache)="/Users/jingyil/work/jfrog/jpd-dev/jpd-demo-app/nuget/NuGetDemo/obj/Debug/net8.0/NuGetDemo.genbundle.cache" (previous value: "obj\Debug/net8.0/NuGetDemo.genbundle.cache") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.targets (48,5)
+       Property reassignment: $(GenerateRuntimeConfigDevFile)="false" (previous value: "true") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.targets (81,5)
+       Property 'HOME' with value '/Users/jingyil' expanded from the environment.
+       Property reassignment: $(_DefaultUserProfileRuntimeStorePath)="/Users/jingyil/.dotnet/store" (previous value: "/Users/jingyil") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.targets (98,5)
+       Property reassignment: $(AvailablePlatforms)="Any CPU,x86,x64,ARM32" (previous value: "Any CPU,x86,x64") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.targets (136,5)
+       Property reassignment: $(AvailablePlatforms)="Any CPU,x86,x64,ARM32,ARM64" (previous value: "Any CPU,x86,x64,ARM32") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.targets (140,5)
+       Property reassignment: $(CoreBuildDependsOn)="
+             _CheckForBuildWithNoBuild;
+             
+             BuildOnlySettings;
+             PrepareForBuild;
+             PreBuildEvent;
+             ResolveReferences;
+             PrepareResources;
+             ResolveKeySource;
+             Compile;
+             ExportWindowsMDFile;
+             UnmanagedUnregistration;
+             GenerateSerializationAssemblies;
+             CreateSatelliteAssemblies;
+             GenerateManifests;
+             GetTargetPath;
+             PrepareForRun;
+             UnmanagedRegistration;
+             IncrementalClean;
+             PostBuildEvent
+           ;
+             GenerateBuildDependencyFile;
+             GenerateBuildRuntimeConfigurationFiles
+           " (previous value: "
+             BuildOnlySettings;
+             PrepareForBuild;
+             PreBuildEvent;
+             ResolveReferences;
+             PrepareResources;
+             ResolveKeySource;
+             Compile;
+             ExportWindowsMDFile;
+             UnmanagedUnregistration;
+             GenerateSerializationAssemblies;
+             CreateSatelliteAssemblies;
+             GenerateManifests;
+             GetTargetPath;
+             PrepareForRun;
+             UnmanagedRegistration;
+             IncrementalClean;
+             PostBuildEvent
+           ") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.targets (197,5)
+       Property reassignment: $(CoreCleanDependsOn)="
+             _SdkBeforeClean;
+             
+           " (previous value: "") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.targets (206,5)
+       Property reassignment: $(RebuildDependsOn)="
+             _SdkBeforeRebuild;
+             
+             BeforeRebuild;
+             Clean;
+             Build;
+             AfterRebuild;
+           
+           " (previous value: "
+             BeforeRebuild;
+             Clean;
+             Build;
+             AfterRebuild;
+           ") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.targets (213,5)
+       Property reassignment: $(CompileDependsOn)="
+             
+             ResolveReferences;
+             ResolveKeySource;
+             SetWin32ManifestProperties;
+             _SetPreferNativeArm64Win32ManifestProperties;
+             FindReferenceAssembliesForReferences;
+             _GenerateCompileInputs;
+             BeforeCompile;
+             _TimeStampBeforeCompile;
+             _GenerateCompileDependencyCache;
+             CoreCompile;
+             _TimeStampAfterCompile;
+             AfterCompile;
+           ;
+             _CreateAppHost;
+             _CreateComHost;
+             _GetIjwHostPaths;
+           " (previous value: "
+             ResolveReferences;
+             ResolveKeySource;
+             SetWin32ManifestProperties;
+             _SetPreferNativeArm64Win32ManifestProperties;
+             FindReferenceAssembliesForReferences;
+             _GenerateCompileInputs;
+             BeforeCompile;
+             _TimeStampBeforeCompile;
+             _GenerateCompileDependencyCache;
+             CoreCompile;
+             _TimeStampAfterCompile;
+             AfterCompile;
+           ") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.targets (679,5)
+       Property reassignment: $(CreateSatelliteAssembliesDependsOn)="
+             
+             ;
+             _GenerateSatelliteAssemblyInputs;
+             ComputeIntermediateSatelliteAssemblies;
+             GenerateSatelliteAssemblies
+           ;
+             CoreGenerateSatelliteAssemblies
+           " (previous value: "
+             ;
+             _GenerateSatelliteAssemblyInputs;
+             ComputeIntermediateSatelliteAssemblies;
+             GenerateSatelliteAssemblies
+           ") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.targets (1065,5)
+       Property reassignment: $(SourceLinkUrlInitializerTargets)=";_InitializeGitHubSourceLinkUrl;_InitializeGitLabSourceLinkUrl" (previous value: ";_InitializeGitHubSourceLinkUrl") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.SourceLink.GitLab/build/Microsoft.SourceLink.GitLab.targets (12,5)
+       Property reassignment: $(SourceControlManagerUrlTranslationTargets)=";TranslateGitHubUrlsInSourceControlInformation;TranslateGitLabUrlsInSourceControlInformation" (previous value: ";TranslateGitHubUrlsInSourceControlInformation") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.SourceLink.GitLab/build/Microsoft.SourceLink.GitLab.targets (13,5)
+       Property reassignment: $(SourceLinkUrlInitializerTargets)=";_InitializeGitHubSourceLinkUrl;_InitializeGitLabSourceLinkUrl;_InitializeAzureReposGitSourceLinkUrl" (previous value: ";_InitializeGitHubSourceLinkUrl;_InitializeGitLabSourceLinkUrl") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.SourceLink.AzureRepos.Git/build/Microsoft.SourceLink.AzureRepos.Git.targets (12,5)
+       Property reassignment: $(SourceControlManagerUrlTranslationTargets)=";TranslateGitHubUrlsInSourceControlInformation;TranslateGitLabUrlsInSourceControlInformation;TranslateAzureReposGitUrlsInSourceControlInformation" (previous value: ";TranslateGitHubUrlsInSourceControlInformation;TranslateGitLabUrlsInSourceControlInformation") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.SourceLink.AzureRepos.Git/build/Microsoft.SourceLink.AzureRepos.Git.targets (13,5)
+       Property reassignment: $(SourceLinkUrlInitializerTargets)=";_InitializeGitHubSourceLinkUrl;_InitializeGitLabSourceLinkUrl;_InitializeAzureReposGitSourceLinkUrl;_InitializeBitbucketGitSourceLinkUrl" (previous value: ";_InitializeGitHubSourceLinkUrl;_InitializeGitLabSourceLinkUrl;_InitializeAzureReposGitSourceLinkUrl") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.SourceLink.Bitbucket.Git/build/Microsoft.SourceLink.Bitbucket.Git.targets (12,5)
+       Property reassignment: $(SourceControlManagerUrlTranslationTargets)=";TranslateGitHubUrlsInSourceControlInformation;TranslateGitLabUrlsInSourceControlInformation;TranslateAzureReposGitUrlsInSourceControlInformation;TranslateBitbucketGitUrlsInSourceControlInformation" (previous value: ";TranslateGitHubUrlsInSourceControlInformation;TranslateGitLabUrlsInSourceControlInformation;TranslateAzureReposGitUrlsInSourceControlInformation") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.SourceLink.Bitbucket.Git/build/Microsoft.SourceLink.Bitbucket.Git.targets (13,5)
+       Property reassignment: $(DesignerRuntimeImplementationProjectOutputGroupDependsOn)="
+             
+             ;
+             
+             ;
+             BuildOnlySettings;
+             PrepareForBuild;
+             AssignTargetPaths;
+             ResolveReferences
+           
+           ;
+             _GenerateDesignerDepsFile;
+             _GenerateDesignerRuntimeConfigFile;
+             GetCopyToOutputDirectoryItems;
+             _GatherDesignerShadowCopyFiles;
+           " (previous value: "
+             ;
+             
+             ;
+             BuildOnlySettings;
+             PrepareForBuild;
+             AssignTargetPaths;
+             ResolveReferences
+           
+           ") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.DesignerSupport.targets (21,5)
+       Property reassignment: $(_GenerateToolsSettingsFileCacheFile)="/Users/jingyil/work/jfrog/jpd-dev/jpd-demo-app/nuget/NuGetDemo/obj/Debug/net8.0/NuGetDemo.toolssettingsinput.cache" (previous value: "obj\Debug/net8.0/NuGetDemo.toolssettingsinput.cache") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.PackTool.targets (68,5)
+       Property reassignment: $(_ShimInputCacheFile)="/Users/jingyil/work/jfrog/jpd-dev/jpd-demo-app/nuget/NuGetDemo/obj/Debug/net8.0/NuGetDemo.shiminput.cache" (previous value: "obj\Debug/net8.0/NuGetDemo.shiminput.cache") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.PackTool.targets (137,5)
+       Property reassignment: $(_ShimCreatedSentinelFile)="/Users/jingyil/work/jfrog/jpd-dev/jpd-demo-app/nuget/NuGetDemo/obj/Debug/net8.0/NuGetDemo.shimcreated.sentinel" (previous value: "obj\Debug/net8.0/NuGetDemo.shimcreated.sentinel") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.PackTool.targets (139,5)
+       Property reassignment: $(DefineConstants)="TRACE;DEBUG" (previous value: "TRACE") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.CSharp.targets (31,5)
+       Property reassignment: $(DefineConstants)="TRACE;DEBUG;NET;NET8_0;NETCOREAPP" (previous value: "TRACE;DEBUG") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.CSharp.targets (34,5)
+       Property reassignment: $(WarningsAsErrors)=";NU1605;SYSLIB0011" (previous value: ";NU1605") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.CSharp.targets (48,5)
+       Property reassignment: $(PackageDescription)="Package Description" (previous value: "") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/NuGet.Build.Tasks.Pack/build/NuGet.Build.Tasks.Pack.targets (34,5)
+       Property reassignment: $(GenerateNuspecDependsOn)="Build;_LoadPackInputItems; _GetTargetFrameworksOutput; _WalkEachTargetPerFramework; _GetPackageFiles; " (previous value: "_LoadPackInputItems; _GetTargetFrameworksOutput; _WalkEachTargetPerFramework; _GetPackageFiles; ") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/NuGet.Build.Tasks.Pack/build/NuGet.Build.Tasks.Pack.targets (59,5)
+       Property reassignment: $(_IsNotSetContainersTargetsDir)="true" (previous value: "false") at /Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/Sdk/Sdk.targets (59,5)
+       Property reassignment: $(_IsSDKContainerAllowedVersion)="true" (previous value: "false") at /Users/jingyil/.dotnet/sdk/8.0.413/Containers/build/Microsoft.NET.Build.Containers.targets (5,5)
+       Property reassignment: $(_ContainerIsTargetingNet8TFM)="true" (previous value: "false") at /Users/jingyil/.dotnet/sdk/8.0.413/Containers/build/Microsoft.NET.Build.Containers.targets (15,5)
+       Overriding target "ResolveFrameworkReferences" in project "/Users/jingyil/.dotnet/sdk/8.0.413/Microsoft.Common.CurrentVersion.targets" with target "ResolveFrameworkReferences" from project "/Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.FrameworkReferenceResolution.targets".
+       Overriding target "Run" in project "/Users/jingyil/.dotnet/sdk/8.0.413/Microsoft.Common.CurrentVersion.targets" with target "Run" from project "/Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.targets".
+       Overriding target "GenerateSupportedTargetFrameworkAlias" in project "/Users/jingyil/.dotnet/sdk/8.0.413/Microsoft.Common.CurrentVersion.targets" with target "GenerateSupportedTargetFrameworkAlias" from project "/Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.targets".
+       Overriding target "GetReferenceAssemblyPaths" in project "/Users/jingyil/.dotnet/sdk/8.0.413/Microsoft.Common.CurrentVersion.targets" with target "GetReferenceAssemblyPaths" from project "/Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.DisableStandardFrameworkResolution.targets".
+       Overriding target "GetFrameworkPaths" in project "/Users/jingyil/.dotnet/sdk/8.0.413/Microsoft.Common.CurrentVersion.targets" with target "GetFrameworkPaths" from project "/Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.DisableStandardFrameworkResolution.targets".
+       Overriding target "DesignerRuntimeImplementationProjectOutputGroup" in project "/Users/jingyil/.dotnet/sdk/8.0.413/Microsoft.Common.CurrentVersion.targets" with target "DesignerRuntimeImplementationProjectOutputGroup" from project "/Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.DesignerSupport.targets".
+       Overriding target "Publish" in project "/Users/jingyil/.dotnet/sdk/8.0.413/Microsoft.Common.CurrentVersion.targets" with target "Publish" from project "/Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Publish.targets".
+       Overriding target "ResolveReadyToRunCompilers" in project "/Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.CrossGen.targets" with target "ResolveReadyToRunCompilers" from project "/Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Publish.targets".
+       Overriding target "GetCopyToPublishDirectoryItems" in project "/Users/jingyil/.dotnet/sdk/8.0.413/Microsoft.Common.CurrentVersion.targets" with target "GetCopyToPublishDirectoryItems" from project "/Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Publish.targets".
+     1>Project "/Users/jingyil/work/jfrog/jpd-dev/jpd-demo-app/nuget/NuGetDemo/NuGetDemo.csproj" (1) is building "/Users/jingyil/work/jfrog/jpd-dev/jpd-demo-app/nuget/NuGetDemo/NuGetDemo.csproj" (1:2) on node 1 (_IsProjectRestoreSupported target(s)).
+   1:2>Target "_IsProjectRestoreSupported" in file "/Users/jingyil/.dotnet/sdk/8.0.413/NuGet.targets" from project "/Users/jingyil/work/jfrog/jpd-dev/jpd-demo-app/nuget/NuGetDemo/NuGetDemo.csproj" (entry point):
+   1:2>Done building target "_IsProjectRestoreSupported" in project "NuGetDemo.csproj".
+   1:2>Done Building Project "/Users/jingyil/work/jfrog/jpd-dev/jpd-demo-app/nuget/NuGetDemo/NuGetDemo.csproj" (_IsProjectRestoreSupported target(s)).
+     1>Done executing task "MSBuild".
+       Task "MSBuild" skipped, due to false condition; ( '$(RestoreUseSkipNonexistentTargets)' != 'true' ) was evaluated as ( 'true' != 'true' ).
+       Assembly loaded during TaskRun: NuGet.Build.Tasks, Version=6.11.1.2, Culture=neutral, PublicKeyToken=31bf3856ad364e35 (location: /Users/jingyil/.dotnet/sdk/8.0.413/NuGet.Build.Tasks.dll, MVID: da6659e2-ab3c-4a1c-91d3-86fe81c4da96, AssemblyLoadContext: MSBuild plugin /Users/jingyil/.dotnet/sdk/8.0.413/NuGet.Build.Tasks.dll)
+       Assembly loaded during TaskRun: NuGet.Common, Version=6.11.1.2, Culture=neutral, PublicKeyToken=31bf3856ad364e35 (location: /Users/jingyil/.dotnet/sdk/8.0.413/NuGet.Common.dll, MVID: 71662c50-4eea-46ea-82bf-b2edfd33a945, AssemblyLoadContext: MSBuild plugin /Users/jingyil/.dotnet/sdk/8.0.413/NuGet.Build.Tasks.dll)
+       Assembly loaded during TaskRun: NuGet.Commands, Version=6.11.1.2, Culture=neutral, PublicKeyToken=31bf3856ad364e35 (location: /Users/jingyil/.dotnet/sdk/8.0.413/NuGet.Commands.dll, MVID: fd182425-a30a-445b-9628-b4c5f0ab1353, AssemblyLoadContext: MSBuild plugin /Users/jingyil/.dotnet/sdk/8.0.413/NuGet.Build.Tasks.dll)
+       Assembly loaded during TaskRun: NuGet.ProjectModel, Version=6.11.1.2, Culture=neutral, PublicKeyToken=31bf3856ad364e35 (location: /Users/jingyil/.dotnet/sdk/8.0.413/NuGet.ProjectModel.dll, MVID: de1018f8-9cea-4ea5-aafd-eccdf5a6f888, AssemblyLoadContext: MSBuild plugin /Users/jingyil/.dotnet/sdk/8.0.413/NuGet.Build.Tasks.dll)
+       Using "WarnForInvalidProjectsTask" task from assembly "/Users/jingyil/.dotnet/sdk/8.0.413/NuGet.Build.Tasks.dll".
+       Task "WarnForInvalidProjectsTask"
+       Done executing task "WarnForInvalidProjectsTask".
+     1>Done building target "_FilterRestoreGraphProjectInputItems" in project "NuGetDemo.csproj".
+       Target "_FilterRestoreGraphProjectInputItems" skipped. Previously built successfully.
+     1>Target "_GetAllRestoreProjectPathItems" in file "/Users/jingyil/.dotnet/sdk/8.0.413/NuGet.targets" from project "/Users/jingyil/work/jfrog/jpd-dev/jpd-demo-app/nuget/NuGetDemo/NuGetDemo.csproj" (target "_GenerateRestoreGraph" depends on it):
+       Using "NuGetMessageTask" task from assembly "/Users/jingyil/.dotnet/sdk/8.0.413/NuGet.Build.Tasks.dll".
+       Task "NuGetMessageTask"
+         Determining projects to restore...
+       Done executing task "NuGetMessageTask".
+       Task "MSBuild"
+         Global Properties:
+           ExcludeRestorePackageImports=true
+     1>Project "/Users/jingyil/work/jfrog/jpd-dev/jpd-demo-app/nuget/NuGetDemo/NuGetDemo.csproj" (1) is building "/Users/jingyil/work/jfrog/jpd-dev/jpd-demo-app/nuget/NuGetDemo/NuGetDemo.csproj" (1:3) on node 1 (_GenerateRestoreProjectPathWalk target(s)).
+   1:3>Target "_GenerateRestoreProjectPathItemsAllFrameworks" skipped, due to false condition; ( '$(TargetFrameworks)' != '' ) was evaluated as ( '' != '' ).
+   1:3>Target "_GenerateRestoreProjectPathItemsPerFramework" in file "/Users/jingyil/.dotnet/sdk/8.0.413/NuGet.targets" from project "/Users/jingyil/work/jfrog/jpd-dev/jpd-demo-app/nuget/NuGetDemo/NuGetDemo.csproj" (target "_GenerateRestoreProjectPathItemsCurrentProject" depends on it):
+       Using "ConvertToAbsolutePath" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+       Task "ConvertToAbsolutePath"
+       Done executing task "ConvertToAbsolutePath".
+   1:3>Done building target "_GenerateRestoreProjectPathItemsPerFramework" in project "NuGetDemo.csproj".
+   1:3>Target "_GenerateRestoreProjectPathItemsCurrentProject" in file "/Users/jingyil/.dotnet/sdk/8.0.413/NuGet.targets" from project "/Users/jingyil/work/jfrog/jpd-dev/jpd-demo-app/nuget/NuGetDemo/NuGetDemo.csproj" (target "_GenerateRestoreProjectPathItems" depends on it):
+   1:3>Done building target "_GenerateRestoreProjectPathItemsCurrentProject" in project "NuGetDemo.csproj".
+   1:3>Target "_GenerateRestoreProjectPathItems" in file "/Users/jingyil/.dotnet/sdk/8.0.413/NuGet.targets" from project "/Users/jingyil/work/jfrog/jpd-dev/jpd-demo-app/nuget/NuGetDemo/NuGetDemo.csproj" (target "_GenerateRestoreProjectPathWalk" depends on it):
+       Task "RemoveDuplicates"
+       Done executing task "RemoveDuplicates".
+   1:3>Done building target "_GenerateRestoreProjectPathItems" in project "NuGetDemo.csproj".
+   1:3>Target "_GenerateRestoreProjectPathWalk" in file "/Users/jingyil/.dotnet/sdk/8.0.413/NuGet.targets" from project "/Users/jingyil/work/jfrog/jpd-dev/jpd-demo-app/nuget/NuGetDemo/NuGetDemo.csproj" (entry point):
+       Task "MSBuild"
+       Done executing task "MSBuild".
+       Task "MSBuild" skipped, due to false condition; ( '$(RestoreUseSkipNonexistentTargets)' != 'true' ) was evaluated as ( 'true' != 'true' ).
+       Task "RemoveDuplicates"
+       Done executing task "RemoveDuplicates".
+   1:3>Done building target "_GenerateRestoreProjectPathWalk" in project "NuGetDemo.csproj".
+   1:3>Done Building Project "/Users/jingyil/work/jfrog/jpd-dev/jpd-demo-app/nuget/NuGetDemo/NuGetDemo.csproj" (_GenerateRestoreProjectPathWalk target(s)).
+     1>Done executing task "MSBuild".
+       Task "MSBuild" skipped, due to false condition; ( '$(RestoreUseSkipNonexistentTargets)' != 'true' ) was evaluated as ( 'true' != 'true' ).
+       Task "RemoveDuplicates"
+       Done executing task "RemoveDuplicates".
+       Task "MSBuild"
+         Global Properties:
+           ExcludeRestorePackageImports=true
+     1>Project "/Users/jingyil/work/jfrog/jpd-dev/jpd-demo-app/nuget/NuGetDemo/NuGetDemo.csproj" (1) is building "/Users/jingyil/work/jfrog/jpd-dev/jpd-demo-app/nuget/NuGetDemo/NuGetDemo.csproj" (1:4) on node 1 (_IsProjectRestoreSupported target(s)).
+   1:4>Target "_IsProjectRestoreSupported" skipped. Previously built successfully.
+   1:4>Done Building Project "/Users/jingyil/work/jfrog/jpd-dev/jpd-demo-app/nuget/NuGetDemo/NuGetDemo.csproj" (_IsProjectRestoreSupported target(s)).
+     1>Done executing task "MSBuild".
+       Task "MSBuild" skipped, due to false condition; ( '$(RestoreUseSkipNonexistentTargets)' != 'true' ) was evaluated as ( 'true' != 'true' ).
+     1>Done building target "_GetAllRestoreProjectPathItems" in project "NuGetDemo.csproj".
+     1>Target "_GenerateRestoreGraph" in file "/Users/jingyil/.dotnet/sdk/8.0.413/NuGet.targets" from project "/Users/jingyil/work/jfrog/jpd-dev/jpd-demo-app/nuget/NuGetDemo/NuGetDemo.csproj" (target "Restore" depends on it):
+       Using "Message" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+       Task "Message"
+         Generating dg file
+       Done executing task "Message".
+       Task "Message"
+         /Users/jingyil/work/jfrog/jpd-dev/jpd-demo-app/nuget/NuGetDemo/NuGetDemo.csproj
+       Done executing task "Message".
+       Task "MSBuild"
+         Global Properties:
+           ExcludeRestorePackageImports=true
+     1>Project "/Users/jingyil/work/jfrog/jpd-dev/jpd-demo-app/nuget/NuGetDemo/NuGetDemo.csproj" (1) is building "/Users/jingyil/work/jfrog/jpd-dev/jpd-demo-app/nuget/NuGetDemo/NuGetDemo.csproj" (1:5) on node 1 (_GenerateRestoreGraphProjectEntry target(s)).
+   1:5>Target "_GetProjectJsonPath" in file "/Users/jingyil/.dotnet/sdk/8.0.413/NuGet.targets" from project "/Users/jingyil/work/jfrog/jpd-dev/jpd-demo-app/nuget/NuGetDemo/NuGetDemo.csproj" (target "_GetRestoreProjectStyle" depends on it):
+   1:5>Task "GetRestoreProjectJsonPathTask" skipped, due to false condition; ( '$(RestoreProjectStyle)' == 'ProjectJson' OR '$(RestoreProjectStyle)' == '' ) was evaluated as ( 'PackageReference' == 'ProjectJson' OR 'PackageReference' == '' ).
+   1:5>Done building target "_GetProjectJsonPath" in project "NuGetDemo.csproj".
+       Target "_CheckForUnsupportedTargetPlatformIdentifier" skipped, due to false condition; ('$(TargetPlatformIdentifier)' != '' and '$(TargetFrameworkIdentifier)' == '.NETCoreApp' and $([MSBuild]::VersionGreaterThanOrEquals($(TargetFrameworkVersion), 5.0)) And ('$(DesignTimeBuild)' != 'true' Or '@(MissingWorkloadPack)' == '')) was evaluated as ('' != '' and '.NETCoreApp' == '.NETCoreApp' and True And ('' != 'true' Or '' == '')).
+       Target "_CheckForMissingWorkload" skipped, due to false condition; ('@(MissingWorkloadPack)' != '' And '$(DesignTimeBuild)' != 'true') was evaluated as ('' != '' And '' != 'true').
+   1:5>Target "_CheckForUnsupportedNETCoreVersion" in file "/Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.TargetFrameworkInference.targets" from project "/Users/jingyil/work/jfrog/jpd-dev/jpd-demo-app/nuget/NuGetDemo/NuGetDemo.csproj" (target "CollectPackageReferences" depends on it):
+       Task "NETSdkError" skipped, due to false condition; ('$(_TargetFrameworkVersionWithoutV)' > '$(NETCoreAppMaximumVersion)' and '$(DisplayVSMessage)' != 'true') was evaluated as ('8.0' > '8.0' and '' != 'true').
+       Task "NETSdkError" skipped, due to false condition; ('$(DisplayVSMessage)' == 'true') was evaluated as ('' == 'true').
+   1:5>Done building target "_CheckForUnsupportedNETCoreVersion" in project "NuGetDemo.csproj".
+       Target "_CheckForEolTargetFrameworks" skipped, due to false condition; ('@(_EolNetCoreTargetFrameworkVersions->AnyHaveMetadataValue('Identity', '$(_TargetFrameworkVersionWithoutV)'))' and '$(TargetFrameworkIdentifier)' == '.NETCoreApp' and '$(CheckEolTargetFramework)' == 'true') was evaluated as ('false' and '.NETCoreApp' == '.NETCoreApp' and 'true' == 'true').
+       Target "_CheckForEolWorkloads" skipped, due to false condition; ('@(EolWorkload)' != '' and '$(CheckEolWorkloads)' == 'true') was evaluated as ('' != '' and 'true' == 'true').
+   1:5>Target "_CheckForUnsupportedCppNETCoreVersion" in file "/Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.TargetFrameworkInference.targets" from project "/Users/jingyil/work/jfrog/jpd-dev/jpd-demo-app/nuget/NuGetDemo/NuGetDemo.csproj" (target "CollectPackageReferences" depends on it):
+       Task "NETSdkError" skipped, due to false condition; ('$(TargetFrameworkIdentifier)' == '.NETCoreApp' and '$(_TargetFrameworkVersionWithoutV)' < '3.1' and ('$(Language)' == 'C++' and '$(_EnablePackageReferencesInVCProjects)' != 'true')) was evaluated as ('.NETCoreApp' == '.NETCoreApp' and '8.0' < '3.1' and ('C#' == 'C++' and '' != 'true')).
+   1:5>Done building target "_CheckForUnsupportedCppNETCoreVersion" in project "NuGetDemo.csproj".
+       Target "_CheckForUnsupportedNETStandardVersion" skipped, due to false condition; ('$(TargetFrameworkIdentifier)' == '.NETStandard' And '$(NETStandardMaximumVersion)' != '') was evaluated as ('.NETCoreApp' == '.NETStandard' And '' != '').
+       Target "_CheckForUnsupportedTargetFrameworkAndFeatureCombination" skipped, due to false condition; ('$(TargetFrameworkIdentifier)' == '.NETFramework') was evaluated as ('.NETCoreApp' == '.NETFramework').
+   1:5>Target "UpdateAspNetToFrameworkReference" in file "/Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.DefaultItems.Shared.targets" from project "/Users/jingyil/work/jfrog/jpd-dev/jpd-demo-app/nuget/NuGetDemo/NuGetDemo.csproj" (target "ApplyImplicitVersions" depends on it):
+       Using "CheckIfPackageReferenceShouldBeFrameworkReference" task from assembly "/Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/../tools/net8.0/Microsoft.NET.Build.Tasks.dll".
+       Task "CheckIfPackageReferenceShouldBeFrameworkReference"
+       Done executing task "CheckIfPackageReferenceShouldBeFrameworkReference".
+       Task "NETSdkError" skipped, due to false condition; ('$(_ShouldRemoveAspNetCoreAll)' == 'true') was evaluated as ('False' == 'true').
+       Task "CheckIfPackageReferenceShouldBeFrameworkReference"
+       Done executing task "CheckIfPackageReferenceShouldBeFrameworkReference".
+       Task "NETSdkWarning" skipped, due to false condition; ('$(_ShouldRemoveAspNetCoreApp)' == 'true') was evaluated as ('False' == 'true').
+   1:5>Done building target "UpdateAspNetToFrameworkReference" in project "NuGetDemo.csproj".
+       Target "IncludeTargetingPackReference" skipped, due to false condition; ('$(TargetFrameworkMoniker)' != '' and '$(TargetFrameworkIdentifier)' == '.NETFramework' and '$(AutomaticallyUseReferenceAssemblyPackages)' == 'true') was evaluated as ('.NETCoreApp,Version=v8.0' != '' and '.NETCoreApp' == '.NETFramework' and 'true' == 'true').
+   1:5>Target "CheckForImplicitPackageReferenceOverrides" in file "/Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.DefaultItems.Shared.targets" from project "/Users/jingyil/work/jfrog/jpd-dev/jpd-demo-app/nuget/NuGetDemo/NuGetDemo.csproj" (target "ApplyImplicitVersions" depends on it):
+       Using "CheckForImplicitPackageReferenceOverrides" task from assembly "/Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/../tools/net8.0/Microsoft.NET.Build.Tasks.dll".
+       Task "CheckForImplicitPackageReferenceOverrides"
+       Done executing task "CheckForImplicitPackageReferenceOverrides".
+   1:5>Done building target "CheckForImplicitPackageReferenceOverrides" in project "NuGetDemo.csproj".
+   1:5>Target "ApplyImplicitVersions" in file "/Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.DefaultItems.Shared.targets" from project "/Users/jingyil/work/jfrog/jpd-dev/jpd-demo-app/nuget/NuGetDemo/NuGetDemo.csproj" (target "CollectPackageReferences" depends on it):
+       Using "ApplyImplicitVersions" task from assembly "/Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/../tools/net8.0/Microsoft.NET.Build.Tasks.dll".
+       Task "ApplyImplicitVersions"
+       Done executing task "ApplyImplicitVersions".
+   1:5>Done building target "ApplyImplicitVersions" in project "NuGetDemo.csproj".
+       Target "CheckForImplicitPackageReferenceOverrides" skipped. Previously built successfully.
+       Target "AddWindowsSdkKnownFrameworkReferences" skipped, due to false condition; ('$(TargetFrameworkIdentifier)' == '.NETCoreApp' And '$(TargetPlatformIdentifier)' == 'Windows') was evaluated as ('.NETCoreApp' == '.NETCoreApp' And '' == 'Windows').
+       Target "_NormalizeTargetPlatformVersion" skipped, due to false condition; ('$(TargetPlatformVersion)' != '' and '$(TargetFrameworkIdentifier)' == '.NETCoreApp' and $([MSBuild]::VersionGreaterThanOrEquals($(TargetFrameworkVersion), 5.0)) and ('$(Language)' != 'C++' or '$(_EnablePackageReferencesInVCProjects)' == 'true')) was evaluated as ('' != '' and '.NETCoreApp' == '.NETCoreApp' and True and ('C#' != 'C++' or '' == 'true')).
+   1:5>Target "_CheckForLanguageAndFeatureCombinationSupport" in file "/Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.RuntimeIdentifierInference.targets" from project "/Users/jingyil/work/jfrog/jpd-dev/jpd-demo-app/nuget/NuGetDemo/NuGetDemo.csproj" (target "ProcessFrameworkReferences" depends on it):
+       Task "NETSdkError" skipped, due to false condition; (('$(Language)' == 'C++' and '$(_EnablePackageReferencesInVCProjects)' != 'true') and $(OutputType) != 'library' and '$(TargetFrameworkIdentifier)' == '.NETCoreApp') was evaluated as (('C#' == 'C++' and '' != 'true') and Exe != 'library' and '.NETCoreApp' == '.NETCoreApp').
+       Task "NETSdkError" skipped, due to false condition; (('$(Language)' == 'C++' and '$(_EnablePackageReferencesInVCProjects)' != 'true') and $(EnableComHosting) == 'true') was evaluated as (('C#' == 'C++' and '' != 'true') and  == 'true').
+       Task "NETSdkError" skipped, due to false condition; (('$(Language)' == 'C++' and '$(_EnablePackageReferencesInVCProjects)' != 'true') and $(SelfContained) == 'true') was evaluated as (('C#' == 'C++' and '' != 'true') and false == 'true').
+   1:5>Done building target "_CheckForLanguageAndFeatureCombinationSupport" in project "NuGetDemo.csproj".
+   1:5>Target "_ComputeToolPackInputsToProcessFrameworkReferences" in file "/Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Publish.targets" from project "/Users/jingyil/work/jfrog/jpd-dev/jpd-demo-app/nuget/NuGetDemo/NuGetDemo.csproj" (target "ProcessFrameworkReferences" depends on it):
+   1:5>Done building target "_ComputeToolPackInputsToProcessFrameworkReferences" in project "NuGetDemo.csproj".
+   1:5>Target "ProcessFrameworkReferences" in file "/Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.FrameworkReferenceResolution.targets" from project "/Users/jingyil/work/jfrog/jpd-dev/jpd-demo-app/nuget/NuGetDemo/NuGetDemo.csproj" (target "CollectPackageReferences" depends on it):
+       Using "CheckForDuplicateFrameworkReferences" task from assembly "/Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/../tools/net8.0/Microsoft.NET.Build.Tasks.dll".
+       Task "CheckForDuplicateFrameworkReferences"
+       Done executing task "CheckForDuplicateFrameworkReferences".
+       Using "ProcessFrameworkReferences" task from assembly "/Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/../tools/net8.0/Microsoft.NET.Build.Tasks.dll".
+       Task "ProcessFrameworkReferences"
+       Done executing task "ProcessFrameworkReferences".
+       Using "ResolveAppHosts" task from assembly "/Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/../tools/net8.0/Microsoft.NET.Build.Tasks.dll".
+       Task "ResolveAppHosts"
+       Done executing task "ResolveAppHosts".
+   1:5>Done building target "ProcessFrameworkReferences" in project "NuGetDemo.csproj".
+       Target "IncludeTargetingPackReference" skipped, due to false condition; ('$(TargetFrameworkMoniker)' != '' and '$(TargetFrameworkIdentifier)' == '.NETFramework' and '$(AutomaticallyUseReferenceAssemblyPackages)' == 'true') was evaluated as ('.NETCoreApp,Version=v8.0' != '' and '.NETCoreApp' == '.NETFramework' and 'true' == 'true').
+   1:5>Target "_AddMicrosoftNetCompilerToolsetFrameworkPackage" in file "/Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.targets" from project "/Users/jingyil/work/jfrog/jpd-dev/jpd-demo-app/nuget/NuGetDemo/NuGetDemo.csproj" (target "CollectPackageReferences" depends on it):
+       Task "NETSdkWarning" skipped, due to false condition; ('@(PackageReference->AnyHaveMetadataValue('Identity', 'Microsoft.Net.Compilers.Toolset.Framework'))' == 'true') was evaluated as ('false' == 'true').
+   1:5>Done building target "_AddMicrosoftNetCompilerToolsetFrameworkPackage" in project "NuGetDemo.csproj".
+   1:5>Target "_CheckForObsoleteDotNetCliToolReferences" in file "/Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.ObsoleteReferences.targets" from project "/Users/jingyil/work/jfrog/jpd-dev/jpd-demo-app/nuget/NuGetDemo/NuGetDemo.csproj" (target "CollectPackageReferences" depends on it):
+       Task "NETSdkWarning" skipped, due to false condition; ( '%(_ReferenceToObsoleteDotNetCliTool.Identity)' != '' ) was evaluated as ( '' != '' ).
+   1:5>Done building target "_CheckForObsoleteDotNetCliToolReferences" in project "NuGetDemo.csproj".
+   1:5>Target "CollectPackageReferences" in file "/Users/jingyil/.dotnet/sdk/8.0.413/NuGet.targets" from project "/Users/jingyil/work/jfrog/jpd-dev/jpd-demo-app/nuget/NuGetDemo/NuGetDemo.csproj" (target "_GetRestoreProjectStyle" depends on it):
+       Using "CheckForDuplicateNuGetItemsTask" task from assembly "/Users/jingyil/.dotnet/sdk/8.0.413/NuGet.Build.Tasks.dll".
+       Task "CheckForDuplicateNuGetItemsTask"
+       Done executing task "CheckForDuplicateNuGetItemsTask".
+   1:5>Done building target "CollectPackageReferences" in project "NuGetDemo.csproj".
+   1:5>Target "_GetRestoreProjectStyle" in file "/Users/jingyil/.dotnet/sdk/8.0.413/NuGet.targets" from project "/Users/jingyil/work/jfrog/jpd-dev/jpd-demo-app/nuget/NuGetDemo/NuGetDemo.csproj" (target "_GenerateRestoreSpecs" depends on it):
+       Using "GetRestoreProjectStyleTask" task from assembly "/Users/jingyil/.dotnet/sdk/8.0.413/NuGet.Build.Tasks.dll".
+       Task "GetRestoreProjectStyleTask"
+       Done executing task "GetRestoreProjectStyleTask".
+   1:5>Done building target "_GetRestoreProjectStyle" in project "NuGetDemo.csproj".
+   1:5>Target "_GenerateRestoreSpecs" in file "/Users/jingyil/.dotnet/sdk/8.0.413/NuGet.targets" from project "/Users/jingyil/work/jfrog/jpd-dev/jpd-demo-app/nuget/NuGetDemo/NuGetDemo.csproj" (target "_GenerateRestoreGraphProjectEntry" depends on it):
+       Task "Message"
+         Restore entry point /Users/jingyil/work/jfrog/jpd-dev/jpd-demo-app/nuget/NuGetDemo/NuGetDemo.csproj
+       Done executing task "Message".
+   1:5>Done building target "_GenerateRestoreSpecs" in project "NuGetDemo.csproj".
+   1:5>Target "_GetRestoreSettingsOverrides" in file "/Users/jingyil/.dotnet/sdk/8.0.413/NuGet.targets" from project "/Users/jingyil/work/jfrog/jpd-dev/jpd-demo-app/nuget/NuGetDemo/NuGetDemo.csproj" (target "_GetRestoreSettings" depends on it):
+       Task "MSBuild" skipped, due to false condition; ( '$(RestorePackagesPath)' != '' ) was evaluated as ( '' != '' ).
+       Task "MSBuild" skipped, due to false condition; ( '$(RestoreRepositoryPathOverride)' != '' ) was evaluated as ( '' != '' ).
+       Task "MSBuild" skipped, due to false condition; ( '$(RestoreSources)' != '' ) was evaluated as ( '' != '' ).
+       Task "MSBuild" skipped, due to false condition; ( '$(RestoreFallbackFolders)' != '' ) was evaluated as ( '' != '' ).
+   1:5>Done building target "_GetRestoreSettingsOverrides" in project "NuGetDemo.csproj".
+   1:5>Target "_GetRestoreSettingsPerFramework" in file "/Users/jingyil/.dotnet/sdk/8.0.413/NuGet.targets" from project "/Users/jingyil/work/jfrog/jpd-dev/jpd-demo-app/nuget/NuGetDemo/NuGetDemo.csproj" (target "_GetRestoreSettingsCurrentProject" depends on it):
+   1:5>Done building target "_GetRestoreSettingsPerFramework" in project "NuGetDemo.csproj".
+   1:5>Target "_GetRestoreSettingsCurrentProject" in file "/Users/jingyil/.dotnet/sdk/8.0.413/NuGet.targets" from project "/Users/jingyil/work/jfrog/jpd-dev/jpd-demo-app/nuget/NuGetDemo/NuGetDemo.csproj" (target "_GetRestoreSettings" depends on it):
+   1:5>Done building target "_GetRestoreSettingsCurrentProject" in project "NuGetDemo.csproj".
+       Target "_GetRestoreSettingsAllFrameworks" skipped, due to false condition; ( '$(TargetFrameworks)' != '' AND '$(PackageReferenceCompatibleProjectStyle)' == 'true' ) was evaluated as ( '' != '' AND 'True' == 'true' ).
+   1:5>Target "_GetRestoreSettings" in file "/Users/jingyil/.dotnet/sdk/8.0.413/NuGet.targets" from project "/Users/jingyil/work/jfrog/jpd-dev/jpd-demo-app/nuget/NuGetDemo/NuGetDemo.csproj" (target "_GenerateDotnetCliToolReferenceSpecs" depends on it):
+       Using "GetRestoreSettingsTask" task from assembly "/Users/jingyil/.dotnet/sdk/8.0.413/NuGet.Build.Tasks.dll".
+       Task "GetRestoreSettingsTask"
+         Assembly loaded during TaskRun (NuGet.Build.Tasks.GetRestoreSettingsTask): NuGet.Configuration, Version=6.11.1.2, Culture=neutral, PublicKeyToken=31bf3856ad364e35 (location: /Users/jingyil/.dotnet/sdk/8.0.413/NuGet.Configuration.dll, MVID: be7e3e57-42a2-4a9c-87cf-47833efa7f94, AssemblyLoadContext: MSBuild plugin /Users/jingyil/.dotnet/sdk/8.0.413/NuGet.Build.Tasks.dll)
+       Done executing task "GetRestoreSettingsTask".
+   1:5>Done building target "_GetRestoreSettings" in project "NuGetDemo.csproj".
+   1:5>Target "_GenerateDotnetCliToolReferenceSpecs" in file "/Users/jingyil/.dotnet/sdk/8.0.413/NuGet.targets" from project "/Users/jingyil/work/jfrog/jpd-dev/jpd-demo-app/nuget/NuGetDemo/NuGetDemo.csproj" (target "_GenerateRestoreGraphProjectEntry" depends on it):
+       Using "GetRestoreDotnetCliToolsTask" task from assembly "/Users/jingyil/.dotnet/sdk/8.0.413/NuGet.Build.Tasks.dll".
+       Task "GetRestoreDotnetCliToolsTask"
+       Done executing task "GetRestoreDotnetCliToolsTask".
+   1:5>Done building target "_GenerateDotnetCliToolReferenceSpecs" in project "NuGetDemo.csproj".
+   1:5>Target "_GenerateRestoreGraphProjectEntry" in file "/Users/jingyil/.dotnet/sdk/8.0.413/NuGet.targets" from project "/Users/jingyil/work/jfrog/jpd-dev/jpd-demo-app/nuget/NuGetDemo/NuGetDemo.csproj" (entry point):
+   1:5>Done building target "_GenerateRestoreGraphProjectEntry" in project "NuGetDemo.csproj".
+   1:5>Done Building Project "/Users/jingyil/work/jfrog/jpd-dev/jpd-demo-app/nuget/NuGetDemo/NuGetDemo.csproj" (_GenerateRestoreGraphProjectEntry target(s)).
+     1>Done executing task "MSBuild".
+       Task "MSBuild"
+         Global Properties:
+           ExcludeRestorePackageImports=true
+     1>Project "/Users/jingyil/work/jfrog/jpd-dev/jpd-demo-app/nuget/NuGetDemo/NuGetDemo.csproj" (1) is building "/Users/jingyil/work/jfrog/jpd-dev/jpd-demo-app/nuget/NuGetDemo/NuGetDemo.csproj" (1:6) on node 1 (_GenerateProjectRestoreGraph target(s)).
+   1:6>Target "_GetRestoreProjectStyle" skipped. Previously built successfully.
+       Target "_GetRestoreProjectStyle" skipped. Previously built successfully.
+       Target "_GetRestoreProjectStyle" skipped. Previously built successfully.
+   1:6>Target "_GetRestoreTargetFrameworkOverride" in file "/Users/jingyil/.dotnet/sdk/8.0.413/NuGet.targets" from project "/Users/jingyil/work/jfrog/jpd-dev/jpd-demo-app/nuget/NuGetDemo/NuGetDemo.csproj" (target "_GetRestoreTargetFrameworksOutput" depends on it):
+       Task "GetGlobalPropertyValueTask" skipped, due to false condition; ( '$(TargetFrameworks)' != '' ) was evaluated as ( '' != '' ).
+   1:6>Done building target "_GetRestoreTargetFrameworkOverride" in project "NuGetDemo.csproj".
+   1:6>Target "_GetRestoreTargetFrameworksOutput" in file "/Users/jingyil/.dotnet/sdk/8.0.413/NuGet.targets" from project "/Users/jingyil/work/jfrog/jpd-dev/jpd-demo-app/nuget/NuGetDemo/NuGetDemo.csproj" (target "_GenerateRestoreProjectSpec" depends on it):
+       Using "GetProjectTargetFrameworksTask" task from assembly "/Users/jingyil/.dotnet/sdk/8.0.413/NuGet.Build.Tasks.dll".
+       Task "GetProjectTargetFrameworksTask"
+       Done executing task "GetProjectTargetFrameworksTask".
+   1:6>Done building target "_GetRestoreTargetFrameworksOutput" in project "NuGetDemo.csproj".
+       Target "_GetRestoreSettings" skipped. Previously built successfully.
+   1:6>Target "_GenerateRestoreProjectSpec" in file "/Users/jingyil/.dotnet/sdk/8.0.413/NuGet.targets" from project "/Users/jingyil/work/jfrog/jpd-dev/jpd-demo-app/nuget/NuGetDemo/NuGetDemo.csproj" (target "_GenerateProjectRestoreGraph" depends on it):
+       Task "ConvertToAbsolutePath"
+       Done executing task "ConvertToAbsolutePath".
+   1:6>Done building target "_GenerateRestoreProjectSpec" in project "NuGetDemo.csproj".
+       Target "_GenerateProjectRestoreGraphAllFrameworks" skipped, due to false condition; ( '$(TargetFrameworks)' != '' ) was evaluated as ( '' != '' ).
+       Target "_GetRestoreProjectStyle" skipped. Previously built successfully.
+       Target "CollectPackageReferences" skipped. Previously built successfully.
+   1:6>Target "CollectPackageDownloads" in file "/Users/jingyil/.dotnet/sdk/8.0.413/NuGet.targets" from project "/Users/jingyil/work/jfrog/jpd-dev/jpd-demo-app/nuget/NuGetDemo/NuGetDemo.csproj" (target "_CollectRestoreInputs" depends on it):
+       Task "CheckForDuplicateNuGetItemsTask"
+       Done executing task "CheckForDuplicateNuGetItemsTask".
+   1:6>Done building target "CollectPackageDownloads" in project "NuGetDemo.csproj".
+   1:6>Target "CollectFrameworkReferences" in file "/Users/jingyil/.dotnet/sdk/8.0.413/NuGet.targets" from project "/Users/jingyil/work/jfrog/jpd-dev/jpd-demo-app/nuget/NuGetDemo/NuGetDemo.csproj" (target "_CollectRestoreInputs" depends on it):
+   1:6>Done building target "CollectFrameworkReferences" in project "NuGetDemo.csproj".
+   1:6>Target "CollectCentralPackageVersions" in file "/Users/jingyil/.dotnet/sdk/8.0.413/NuGet.targets" from project "/Users/jingyil/work/jfrog/jpd-dev/jpd-demo-app/nuget/NuGetDemo/NuGetDemo.csproj" (target "_CollectRestoreInputs" depends on it):
+       Task "CheckForDuplicateNuGetItemsTask"
+       Done executing task "CheckForDuplicateNuGetItemsTask".
+   1:6>Done building target "CollectCentralPackageVersions" in project "NuGetDemo.csproj".
+   1:6>Target "CollectNuGetAuditSuppressions" in file "/Users/jingyil/.dotnet/sdk/8.0.413/NuGet.targets" from project "/Users/jingyil/work/jfrog/jpd-dev/jpd-demo-app/nuget/NuGetDemo/NuGetDemo.csproj" (target "_CollectRestoreInputs" depends on it):
+       Task "CheckForDuplicateNuGetItemsTask"
+       Done executing task "CheckForDuplicateNuGetItemsTask".
+   1:6>Done building target "CollectNuGetAuditSuppressions" in project "NuGetDemo.csproj".
+   1:6>Target "_CollectRestoreInputs" in file "/Users/jingyil/.dotnet/sdk/8.0.413/NuGet.targets" from project "/Users/jingyil/work/jfrog/jpd-dev/jpd-demo-app/nuget/NuGetDemo/NuGetDemo.csproj" (target "_GenerateProjectRestoreGraphPerFramework" depends on it):
+   1:6>Done building target "_CollectRestoreInputs" in project "NuGetDemo.csproj".
+       Target "PrepRestoreForStoreProjects" skipped, due to false condition; ('$(StorePackageName)' != '') was evaluated as ('' != '').
+   1:6>Target "_GenerateProjectRestoreGraphPerFramework" in file "/Users/jingyil/.dotnet/sdk/8.0.413/NuGet.targets" from project "/Users/jingyil/work/jfrog/jpd-dev/jpd-demo-app/nuget/NuGetDemo/NuGetDemo.csproj" (target "_GenerateProjectRestoreGraphCurrentProject" depends on it):
+       Using "GetRestoreProjectReferencesTask" task from assembly "/Users/jingyil/.dotnet/sdk/8.0.413/NuGet.Build.Tasks.dll".
+       Task "GetRestoreProjectReferencesTask"
+       Done executing task "GetRestoreProjectReferencesTask".
+       Using "GetRestorePackageReferencesTask" task from assembly "/Users/jingyil/.dotnet/sdk/8.0.413/NuGet.Build.Tasks.dll".
+       Task "GetRestorePackageReferencesTask"
+       Done executing task "GetRestorePackageReferencesTask".
+       Task "GetCentralPackageVersionsTask" skipped, due to false condition; ( '$(PackageReferenceCompatibleProjectStyle)' == 'true' AND '$(_CentralPackageVersionsEnabled)' == 'true' ) was evaluated as ( 'True' == 'true' AND '' == 'true' ).
+       Using "GetRestorePackageDownloadsTask" task from assembly "/Users/jingyil/.dotnet/sdk/8.0.413/NuGet.Build.Tasks.dll".
+       Task "GetRestorePackageDownloadsTask"
+       Done executing task "GetRestorePackageDownloadsTask".
+       Using "GetRestoreFrameworkReferencesTask" task from assembly "/Users/jingyil/.dotnet/sdk/8.0.413/NuGet.Build.Tasks.dll".
+       Task "GetRestoreFrameworkReferencesTask"
+       Done executing task "GetRestoreFrameworkReferencesTask".
+       Using "GetRestoreNuGetAuditSuppressionsTask" task from assembly "/Users/jingyil/.dotnet/sdk/8.0.413/NuGet.Build.Tasks.dll".
+       Task "GetRestoreNuGetAuditSuppressionsTask"
+       Done executing task "GetRestoreNuGetAuditSuppressionsTask".
+   1:6>Done building target "_GenerateProjectRestoreGraphPerFramework" in project "NuGetDemo.csproj".
+   1:6>Target "_GenerateProjectRestoreGraphCurrentProject" in file "/Users/jingyil/.dotnet/sdk/8.0.413/NuGet.targets" from project "/Users/jingyil/work/jfrog/jpd-dev/jpd-demo-app/nuget/NuGetDemo/NuGetDemo.csproj" (target "_GenerateRestoreDependencies" depends on it):
+   1:6>Done building target "_GenerateProjectRestoreGraphCurrentProject" in project "NuGetDemo.csproj".
+   1:6>Target "_GenerateRestoreDependencies" in file "/Users/jingyil/.dotnet/sdk/8.0.413/NuGet.targets" from project "/Users/jingyil/work/jfrog/jpd-dev/jpd-demo-app/nuget/NuGetDemo/NuGetDemo.csproj" (target "_GenerateProjectRestoreGraph" depends on it):
+   1:6>Done building target "_GenerateRestoreDependencies" in project "NuGetDemo.csproj".
+   1:6>Target "_GenerateProjectRestoreGraph" in file "/Users/jingyil/.dotnet/sdk/8.0.413/NuGet.targets" from project "/Users/jingyil/work/jfrog/jpd-dev/jpd-demo-app/nuget/NuGetDemo/NuGetDemo.csproj" (entry point):
+   1:6>Done building target "_GenerateProjectRestoreGraph" in project "NuGetDemo.csproj".
+   1:6>Done Building Project "/Users/jingyil/work/jfrog/jpd-dev/jpd-demo-app/nuget/NuGetDemo/NuGetDemo.csproj" (_GenerateProjectRestoreGraph target(s)).
+     1>Done executing task "MSBuild".
+     1>Done building target "_GenerateRestoreGraph" in project "NuGetDemo.csproj".
+       Target "_CheckForUnsupportedTargetFramework" skipped, due to false condition; ('$(_UnsupportedTargetFrameworkError)' == 'true') was evaluated as ('' == 'true').
+     1>Target "_CollectTargetFrameworkForTelemetry" in file "/Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.TargetFrameworkInference.targets" from project "/Users/jingyil/work/jfrog/jpd-dev/jpd-demo-app/nuget/NuGetDemo/NuGetDemo.csproj" (target "Restore" depends on it):
+       Using "AllowEmptyTelemetry" task from assembly "/Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/../tools/net8.0/Microsoft.NET.Build.Tasks.dll".
+       Task "AllowEmptyTelemetry"
+       Done executing task "AllowEmptyTelemetry".
+     1>Done building target "_CollectTargetFrameworkForTelemetry" in project "NuGetDemo.csproj".
+     1>Target "_CheckForUnsupportedNETCoreVersion" in file "/Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.TargetFrameworkInference.targets" from project "/Users/jingyil/work/jfrog/jpd-dev/jpd-demo-app/nuget/NuGetDemo/NuGetDemo.csproj" (target "Restore" depends on it):
+       Task "NETSdkError" skipped, due to false condition; ('$(_TargetFrameworkVersionWithoutV)' > '$(NETCoreAppMaximumVersion)' and '$(DisplayVSMessage)' != 'true') was evaluated as ('8.0' > '8.0' and '' != 'true').
+       Task "NETSdkError" skipped, due to false condition; ('$(DisplayVSMessage)' == 'true') was evaluated as ('' == 'true').
+     1>Done building target "_CheckForUnsupportedNETCoreVersion" in project "NuGetDemo.csproj".
+       Target "_CheckForEolTargetFrameworks" skipped, due to false condition; ('@(_EolNetCoreTargetFrameworkVersions->AnyHaveMetadataValue('Identity', '$(_TargetFrameworkVersionWithoutV)'))' and '$(TargetFrameworkIdentifier)' == '.NETCoreApp' and '$(CheckEolTargetFramework)' == 'true') was evaluated as ('false' and '.NETCoreApp' == '.NETCoreApp' and 'true' == 'true').
+       Target "_CheckForEolWorkloads" skipped, due to false condition; ('@(EolWorkload)' != '' and '$(CheckEolWorkloads)' == 'true') was evaluated as ('' != '' and 'true' == 'true').
+     1>Target "_CheckForUnsupportedCppNETCoreVersion" in file "/Users/jingyil/.dotnet/sdk/8.0.413/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.TargetFrameworkInference.targets" from project "/Users/jingyil/work/jfrog/jpd-dev/jpd-demo-app/nuget/NuGetDemo/NuGetDemo.csproj" (target "Restore" depends on it):
+       Task "NETSdkError" skipped, due to false condition; ('$(TargetFrameworkIdentifier)' == '.NETCoreApp' and '$(_TargetFrameworkVersionWithoutV)' < '3.1' and ('$(Language)' == 'C++' and '$(_EnablePackageReferencesInVCProjects)' != 'true')) was evaluated as ('.NETCoreApp' == '.NETCoreApp' and '8.0' < '3.1' and ('C#' == 'C++' and '' != 'true')).
+     1>Done building target "_CheckForUnsupportedCppNETCoreVersion" in project "NuGetDemo.csproj".
+       Target "_CheckForUnsupportedNETStandardVersion" skipped, due to false condition; ('$(TargetFrameworkIdentifier)' == '.NETStandard' And '$(NETStandardMaximumVersion)' != '') was evaluated as ('.NETCoreApp' == '.NETStandard' And '' != '').
+       Target "_CheckForUnsupportedTargetFrameworkAndFeatureCombination" skipped, due to false condition; ('$(TargetFrameworkIdentifier)' == '.NETFramework') was evaluated as ('.NETCoreApp' == '.NETFramework').
+     1>Target "Restore" in file "/Users/jingyil/.dotnet/sdk/8.0.413/NuGet.targets" from project "/Users/jingyil/work/jfrog/jpd-dev/jpd-demo-app/nuget/NuGetDemo/NuGetDemo.csproj" (entry point):
+       Task "RemoveDuplicates"
+       Done executing task "RemoveDuplicates".
+       Using "RestoreTask" task from assembly "/Users/jingyil/.dotnet/sdk/8.0.413/NuGet.Build.Tasks.dll".
+       Task "RestoreTask"
+         Assembly loaded during TaskRun (NuGet.Build.Tasks.RestoreTask): NuGet.Packaging, Version=6.11.1.2, Culture=neutral, PublicKeyToken=31bf3856ad364e35 (location: /Users/jingyil/.dotnet/sdk/8.0.413/NuGet.Packaging.dll, MVID: c3569465-2284-4cdc-80fa-53f23ad5a901, AssemblyLoadContext: MSBuild plugin /Users/jingyil/.dotnet/sdk/8.0.413/NuGet.Build.Tasks.dll)
+         Assembly loaded during TaskRun (NuGet.Build.Tasks.RestoreTask): NuGet.LibraryModel, Version=6.11.1.2, Culture=neutral, PublicKeyToken=31bf3856ad364e35 (location: /Users/jingyil/.dotnet/sdk/8.0.413/NuGet.LibraryModel.dll, MVID: 9c74e240-a36b-4261-ae2d-466984d97095, AssemblyLoadContext: MSBuild plugin /Users/jingyil/.dotnet/sdk/8.0.413/NuGet.Build.Tasks.dll)
+         Assembly loaded during TaskRun (NuGet.Build.Tasks.RestoreTask): NuGet.Versioning, Version=6.11.1.2, Culture=neutral, PublicKeyToken=31bf3856ad364e35 (location: /Users/jingyil/.dotnet/sdk/8.0.413/NuGet.Versioning.dll, MVID: 0ff30a8a-7983-4ede-bc2f-f9d2f526b309, AssemblyLoadContext: MSBuild plugin /Users/jingyil/.dotnet/sdk/8.0.413/NuGet.Build.Tasks.dll)
+         Assembly loaded during TaskRun (NuGet.Build.Tasks.RestoreTask): NuGet.Frameworks, Version=6.11.1.2, Culture=neutral, PublicKeyToken=31bf3856ad364e35 (location: /Users/jingyil/.dotnet/sdk/8.0.413/NuGet.Frameworks.dll, MVID: 36fa17a1-abb6-4cce-b85c-dd32a6dcc45f, AssemblyLoadContext: MSBuild plugin /Users/jingyil/.dotnet/sdk/8.0.413/NuGet.Build.Tasks.dll)
+         Assembly loaded during TaskRun (NuGet.Build.Tasks.RestoreTask): NuGet.Protocol, Version=6.11.1.2, Culture=neutral, PublicKeyToken=31bf3856ad364e35 (location: /Users/jingyil/.dotnet/sdk/8.0.413/NuGet.Protocol.dll, MVID: 65288774-e726-408e-8bb6-d22100f75eed, AssemblyLoadContext: MSBuild plugin /Users/jingyil/.dotnet/sdk/8.0.413/NuGet.Build.Tasks.dll)
+         Assembly loaded during TaskRun (NuGet.Build.Tasks.RestoreTask): NuGet.Credentials, Version=6.11.1.2, Culture=neutral, PublicKeyToken=31bf3856ad364e35 (location: /Users/jingyil/.dotnet/sdk/8.0.413/NuGet.Credentials.dll, MVID: 07a91a3f-265a-4226-985e-876d1036d338, AssemblyLoadContext: MSBuild plugin /Users/jingyil/.dotnet/sdk/8.0.413/NuGet.Build.Tasks.dll)
+         Assembly loaded during TaskRun (NuGet.Build.Tasks.RestoreTask): System.Security.Cryptography.X509Certificates, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (location: /Users/jingyil/.dotnet/shared/Microsoft.NETCore.App/8.0.19/System.Security.Cryptography.X509Certificates.dll, MVID: 33228525-7fc2-4178-aead-86a28e27879a, AssemblyLoadContext: Default)
+         Assembly loaded during TaskRun (NuGet.Build.Tasks.RestoreTask): System.Formats.Asn1, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 (location: /Users/jingyil/.dotnet/shared/Microsoft.NETCore.App/8.0.19/System.Formats.Asn1.dll, MVID: 1c25598a-b51d-4bfc-957d-786a944ea4a0, AssemblyLoadContext: Default)
+         Assembly loaded during TaskRun (NuGet.Build.Tasks.RestoreTask): System.Runtime.Numerics, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (location: /Users/jingyil/.dotnet/shared/Microsoft.NETCore.App/8.0.19/System.Runtime.Numerics.dll, MVID: 384647ef-e688-4a6d-a781-4eb92091e6b0, AssemblyLoadContext: Default)
+         X.509 certificate chain validation will use the fallback certificate bundle at '/Users/jingyil/.dotnet/sdk/8.0.413/trustedroots/codesignctl.pem'.
+         X.509 certificate chain validation will use the fallback certificate bundle at '/Users/jingyil/.dotnet/sdk/8.0.413/trustedroots/timestampctl.pem'.
+         Assembly loaded during TaskRun (NuGet.Build.Tasks.RestoreTask): NuGet.DependencyResolver.Core, Version=6.11.1.2, Culture=neutral, PublicKeyToken=31bf3856ad364e35 (location: /Users/jingyil/.dotnet/sdk/8.0.413/NuGet.DependencyResolver.Core.dll, MVID: 70f2641a-4895-4758-a37b-70be48187b22, AssemblyLoadContext: MSBuild plugin /Users/jingyil/.dotnet/sdk/8.0.413/NuGet.Build.Tasks.dll)
+         Running restore with 14 concurrent jobs.
+         Reading project file /Users/jingyil/work/jfrog/jpd-dev/jpd-demo-app/nuget/NuGetDemo/NuGetDemo.csproj.
+         Assembly loaded during TaskRun (NuGet.Build.Tasks.RestoreTask): Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed (location: /Users/jingyil/.dotnet/sdk/8.0.413/Newtonsoft.Json.dll, MVID: 7e62198b-eab2-4380-bbac-29171862d1d8, AssemblyLoadContext: MSBuild plugin /Users/jingyil/.dotnet/sdk/8.0.413/NuGet.Build.Tasks.dll)
+         Assembly loaded during TaskRun (NuGet.Build.Tasks.RestoreTask): System.Runtime.Serialization.Primitives, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (location: /Users/jingyil/.dotnet/shared/Microsoft.NETCore.App/8.0.19/System.Runtime.Serialization.Primitives.dll, MVID: a8d383a1-b096-4200-8372-1424aaa4300c, AssemblyLoadContext: Default)
+         Restoring packages for /Users/jingyil/work/jfrog/jpd-dev/jpd-demo-app/nuget/NuGetDemo/NuGetDemo.csproj...
+         Restoring packages for .NETCoreApp,Version=v8.0...
+         Assembly loaded during TaskRun (NuGet.Build.Tasks.RestoreTask): System.Security.Cryptography.Algorithms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (location: /Users/jingyil/.dotnet/shared/Microsoft.NETCore.App/8.0.19/System.Security.Cryptography.Algorithms.dll, MVID: b927edfd-dd01-4698-adb3-de13db64a215, AssemblyLoadContext: Default)
+         Assembly loaded during TaskRun (NuGet.Build.Tasks.RestoreTask): System.Security.Cryptography.Primitives, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (location: /Users/jingyil/.dotnet/shared/Microsoft.NETCore.App/8.0.19/System.Security.Cryptography.Primitives.dll, MVID: fd89f39d-40e4-4339-8525-151a864ebb8a, AssemblyLoadContext: Default)
+           CACHE http://101.132.117.146:8082/artifactory/api/nuget/v3/slash-nuget-nexus-remote/registration-semver2/serilog/index.json
+           CACHE http://101.132.117.146:8082/artifactory/api/nuget/v3/slash-nuget-nexus-remote/registration-semver2/newtonsoft.json/index.json
+           CACHE http://101.132.117.146:8082/artifactory/api/nuget/v3/slash-nuget-nexus-remote/registration-semver2/nlog/index.json
+           CACHE http://101.132.117.146:8082/artifactory/api/nuget/v3/slash-nuget-nexus-remote/registration-semver2/serilog/page/0.1.6/1.2.47.json
+           CACHE http://101.132.117.146:8082/artifactory/api/nuget/v3/slash-nuget-nexus-remote/registration-semver2/nlog/page/1.0.0.505/4.4.0-beta5.json
+           CACHE http://101.132.117.146:8082/artifactory/api/nuget/v3/slash-nuget-nexus-remote/registration-semver2/nlog/page/4.4.0-beta6/4.6.0-rc2.json
+           CACHE http://101.132.117.146:8082/artifactory/api/nuget/v3/slash-nuget-nexus-remote/registration-semver2/serilog/page/1.2.48/1.4.34.json
+           CACHE http://101.132.117.146:8082/artifactory/api/nuget/v3/slash-nuget-nexus-remote/registration-semver2/nlog/page/4.6.0-rc3/5.2.4.json
+           CACHE http://101.132.117.146:8082/artifactory/api/nuget/v3/slash-nuget-nexus-remote/registration-semver2/serilog/page/1.4.39/2.0.0-beta-541.json
+           CACHE http://101.132.117.146:8082/artifactory/api/nuget/v3/slash-nuget-nexus-remote/registration-semver2/nlog/page/5.2.5/6.0.2.json
+           CACHE http://101.132.117.146:8082/artifactory/api/nuget/v3/slash-nuget-nexus-remote/registration-semver2/serilog/page/2.0.0-rc-556/2.5.0-dev-00814.json
+           CACHE http://101.132.117.146:8082/artifactory/api/nuget/v3/slash-nuget-nexus-remote/registration-semver2/serilog/page/2.5.0-dev-00817/2.8.1-dev-01052.json
+           CACHE http://101.132.117.146:8082/artifactory/api/nuget/v3/slash-nuget-nexus-remote/registration-semver2/serilog/page/2.8.1-dev-01054/2.12.0-dev-01439.json
+           CACHE http://101.132.117.146:8082/artifactory/api/nuget/v3/slash-nuget-nexus-remote/registration-semver2/serilog/page/2.12.0-dev-01445/3.0.0-dev-01787.json
+           CACHE http://101.132.117.146:8082/artifactory/api/nuget/v3/slash-nuget-nexus-remote/registration-semver2/serilog/page/3.0.0-dev-01794/3.0.1.json
+           CACHE http://101.132.117.146:8082/artifactory/api/nuget/v3/slash-nuget-nexus-remote/registration-semver2/serilog/page/3.0.2-dev-02042/4.3.0-dev-02358.json
+           CACHE http://101.132.117.146:8082/artifactory/api/nuget/v3/slash-nuget-nexus-remote/registration-semver2/serilog/page/4.3.0-dev-02360/4.3.1-dev-02373.json
+           CACHE http://101.132.117.146:8082/artifactory/api/nuget/v3/slash-nuget-nexus-remote/registration-semver2/Download/newtonsoft.json/13.0.3
+     1>/Users/jingyil/.dotnet/sdk/8.0.413/NuGet.targets(174,5): error : Object reference not set to an instance of an object. [/Users/jingyil/work/jfrog/jpd-dev/jpd-demo-app/nuget/NuGetDemo/NuGetDemo.csproj]
+         Assembly loaded during TaskRun (NuGet.Build.Tasks.RestoreTask): System.Diagnostics.StackTrace, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (location: /Users/jingyil/.dotnet/shared/Microsoft.NETCore.App/8.0.19/System.Diagnostics.StackTrace.dll, MVID: 75a973f8-87c4-4850-ab5b-462b6045ce16, AssemblyLoadContext: Default)
+         System.NullReferenceException: Object reference not set to an instance of an object.
+            at NuGet.Protocol.ResolverMetadataClient.GetDependencies(HttpSource httpClient, Uri registrationUri, String packageId, VersionRange range, SourceCacheContext cacheContext, ILogger log, CancellationToken token)
+            at NuGet.Protocol.RemoteV3FindPackageByIdResource.FindPackagesByIdAsyncCore(String id, SourceCacheContext sourceCacheContext, ILogger logger, CancellationToken cancellationToken)
+            at NuGet.TaskResultCache`2.<>c__5`1.<GetOrAddAsync>b__5_1(Task`1 task)
+            at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+            at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+         --- End of stack trace from previous location ---
+            at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+            at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+         --- End of stack trace from previous location ---
+            at NuGet.Protocol.RemoteV3FindPackageByIdResource.GetPackageInfoAsync(String id, NuGetVersion version, SourceCacheContext cacheContext, ILogger logger, CancellationToken cancellationToken)
+            at NuGet.Protocol.RemoteV3FindPackageByIdResource.DoesPackageExistAsync(String id, NuGetVersion version, SourceCacheContext cacheContext, ILogger logger, CancellationToken cancellationToken)
+            at NuGet.Commands.SourceRepositoryDependencyProvider.FindLibraryCoreAsync(LibraryRange libraryRange, SourceCacheContext cacheContext, ILogger logger, CancellationToken cancellationToken)
+            at NuGet.TaskResultCache`2.<>c__5`1.<GetOrAddAsync>b__5_1(Task`1 task)
+            at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+            at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+         --- End of stack trace from previous location ---
+            at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+            at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+         --- End of stack trace from previous location ---
+            at NuGet.Commands.SourceRepositoryDependencyProvider.FindLibraryAsync(LibraryRange libraryRange, NuGetFramework targetFramework, SourceCacheContext cacheContext, ILogger logger, CancellationToken cancellationToken)
+            at NuGet.DependencyResolver.ResolverUtility.<FindLibraryFromSourcesAsync>g__FindLibraryFromProviderAsync|9_0(IRemoteDependencyProvider provider, LibraryRange libraryRange, NuGetFramework framework, SourceCacheContext cacheContext, ILogger logger, CancellationToken token)
+            at NuGet.DependencyResolver.ResolverUtility.FindLibraryFromSourcesAsync(LibraryRange libraryRange, IEnumerable`1 providers, NuGetFramework framework, SourceCacheContext cacheContext, ILogger logger, CancellationToken token)
+            at NuGet.DependencyResolver.ResolverUtility.FindLibraryByVersionAsync(LibraryRange libraryRange, NuGetFramework framework, IEnumerable`1 providers, SourceCacheContext cacheContext, ILogger logger, CancellationToken token)
+            at NuGet.DependencyResolver.ResolverUtility.FindPackageLibraryMatchAsync(LibraryRange libraryRange, NuGetFramework framework, IEnumerable`1 remoteProviders, IEnumerable`1 localProviders, SourceCacheContext cacheContext, ILogger logger, CancellationToken cancellationToken)
+            at NuGet.DependencyResolver.ResolverUtility.FindLibraryMatchAsync(LibraryRange libraryRange, NuGetFramework framework, String runtimeIdentifier, IEnumerable`1 remoteProviders, IEnumerable`1 localProviders, IEnumerable`1 projectProviders, IDictionary`2 lockFileLibraries, SourceCacheContext cacheContext, ILogger logger, CancellationToken cancellationToken)
+            at NuGet.DependencyResolver.ResolverUtility.FindLibraryEntryAsync(LibraryRange libraryRange, NuGetFramework framework, String runtimeIdentifier, RemoteWalkContext context, CancellationToken cancellationToken)
+            at NuGet.TaskResultCache`2.<>c__5`1.<GetOrAddAsync>b__5_1(Task`1 task)
+            at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+            at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+         --- End of stack trace from previous location ---
+            at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+            at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+         --- End of stack trace from previous location ---
+            at NuGet.DependencyResolver.RemoteDependencyWalker.CreateGraphNodeAsync(LibraryRange libraryRange, NuGetFramework framework, String runtimeName, RuntimeGraph runtimeGraph, Func`2 predicate, GraphEdge`1 outerEdge, TransitiveCentralPackageVersions transitiveCentralPackageVersions, Boolean hasParentNodes)
+            at NuGet.DependencyResolver.RemoteDependencyWalker.WalkAsync(LibraryRange library, NuGetFramework framework, String runtimeIdentifier, RuntimeGraph runtimeGraph, Boolean recursive)
+            at NuGet.Commands.ProjectRestoreCommand.WalkDependenciesAsync(LibraryRange projectRange, NuGetFramework framework, String runtimeIdentifier, RuntimeGraph runtimeGraph, RemoteDependencyWalker walker, RemoteWalkContext context, CancellationToken token)
+            at NuGet.Commands.ProjectRestoreCommand.TryRestoreAsync(LibraryRange projectRange, IEnumerable`1 frameworkRuntimePairs, NuGetv3LocalRepository userPackageFolder, IReadOnlyList`1 fallbackPackageFolders, RemoteDependencyWalker remoteWalker, RemoteWalkContext context, Boolean forceRuntimeGraphCreation, CancellationToken token, TelemetryActivity telemetryActivity, String telemetryPrefix)
+            at NuGet.Commands.RestoreCommand.ExecuteRestoreAsync(NuGetv3LocalRepository userPackageFolder, IReadOnlyList`1 fallbackPackageFolders, RemoteWalkContext context, CancellationToken token, TelemetryActivity telemetryActivity)
+            at NuGet.Commands.RestoreCommand.ExecuteAsync(CancellationToken token)
+            at NuGet.Commands.RestoreRunner.ExecuteAsync(RestoreSummaryRequest summaryRequest, CancellationToken token)
+            at NuGet.Commands.RestoreRunner.ExecuteAndCommitAsync(RestoreSummaryRequest summaryRequest, IRestoreProgressReporter progressReporter, CancellationToken token)
+            at NuGet.Commands.RestoreRunner.CompleteTaskAsync(List`1 restoreTasks)
+            at NuGet.Commands.RestoreRunner.RunAsync(IEnumerable`1 restoreRequests, RestoreArgs restoreArgs, CancellationToken token)
+            at NuGet.Commands.RestoreRunner.RunAsync(RestoreArgs restoreContext, CancellationToken token)
+            at NuGet.Build.Tasks.BuildTasksUtility.RestoreAsync(DependencyGraphSpec dependencyGraphSpec, Boolean interactive, Boolean recursive, Boolean noCache, Boolean ignoreFailedSources, Boolean disableParallel, Boolean force, Boolean forceEvaluate, Boolean hideWarningsAndErrors, Boolean restorePC, Boolean cleanupAssetsForUnsupportedProjects, ILogger log, CancellationToken cancellationToken)
+            at NuGet.Build.Tasks.RestoreTask.ExecuteAsync(ILogger log)
+       Done executing task "RestoreTask" -- FAILED.
+     1>Done building target "Restore" in project "NuGetDemo.csproj" -- FAILED.
+     1>Done Building Project "/Users/jingyil/work/jfrog/jpd-dev/jpd-demo-app/nuget/NuGetDemo/NuGetDemo.csproj" (Restore target(s)) -- FAILED.
+
+Build FAILED.
+
+       "/Users/jingyil/work/jfrog/jpd-dev/jpd-demo-app/nuget/NuGetDemo/NuGetDemo.csproj" (Restore target) (1) ->
+       (Restore target) -> 
+         /Users/jingyil/.dotnet/sdk/8.0.413/NuGet.targets(174,5): error : Object reference not set to an instance of an object. [/Users/jingyil/work/jfrog/jpd-dev/jpd-demo-app/nuget/NuGetDemo/NuGetDemo.csproj]
+
+    0 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:00.38

@@ -1,0 +1,101 @@
+pipeline {
+    agent any
+    tools {
+        jfrog 'jfrog-cli-demojfrogchina'
+        // jfrog 'jfrog-cli-solengjfrog'
+    }
+
+    environment {
+        JFROG_CLI_RELEASES_REPO="demojfrogchina/app1-generic-jfrog-remote"
+    }
+
+    stages {
+        stage('Testing') {
+            steps {
+                // Show the installed version of JFrog CLI.
+                jf '-v'
+
+                // Show the configured JFrog Platform instances.
+                jf 'c show'
+
+                // jf 'c use solengjfrog'
+
+                // Ping Artifactory.
+                jf 'rt ping'
+
+                sh 'export JFROG_CLI_RELEASES_REPO="demojfrogchina/app1-generic-jfrog-remote"'
+                sh 'echo $JFROG_CLI_RELEASES_REPO'
+            }
+        }
+
+        stage('Clone') {
+            steps {
+                git url: 'https://gitee.com/mumu79/app-kubernetes.git', branch: 'main'
+            }
+        }
+
+        stage('Exec Maven commands') {
+            steps {
+                dir('app-boot') {
+                    // Configure Maven project's repositories
+                    jf 'mvn-config --repo-resolve-releases slash-maven-virtual --repo-resolve-snapshots slash-maven-virtual --repo-deploy-releases slash-maven-test-local --repo-deploy-snapshots slash-maven-test-local'
+
+                    // Install and publish project
+                    jf 'mvn install -Drevision=v1.2.' + env.BUILD_NUMBER
+                }
+            }
+        }
+
+        // stage('Evidence file to Artifact') {
+        //     steps {
+        //         dir('app-boot') {
+        //             // add Evidence file to Artifact
+        //             jf 'evd create --subject-repo-path slash-maven-test-local/com/example/jfrog/app-boot/1.0.' + env.BUILD_NUMBER + '/app-boot-1.0.' + env.BUILD_NUMBER + '.war --predicate sign-artifact.json --predicate-type https://jfrog.com/evidence/build-signature/v1 --key /Users/jingyil/work/jfrog/project/onboarding/jfrog-evidence/openssl_key/private.pem --key-alias slash-public-key'
+        //         }
+        //     }
+        // }
+
+        stage('Publish build info') {
+            steps {
+                dir('app-boot') {
+                    jf 'rt build-publish ' + env.JOB_NAME  + ' ' + env.BUILD_NUMBER
+                }
+            }
+        }
+
+        // stage('Evidence file to Build') {
+        //     steps {
+        //         dir('app-boot') {
+        //             // add Evidence file to Build
+        //             jf 'evd create --build-name ' + env.JOB_NAME  + ' --build-number ' + env.BUILD_NUMBER + ' --predicate sign-build.json --predicate-type https://jfrog.com/evidence/build-signature/v1 --key /Users/jingyil/work/jfrog/project/onboarding/jfrog-evidence/openssl_key/private.pem --key-alias slash-public-key'
+        //         }
+        //     }
+        // }
+
+        stage('Xray scan') {
+            steps {
+                jf 'bs ' + env.JOB_NAME  + ' ' + env.BUILD_NUMBER + ' --fail=true'
+            }
+        }
+
+        stage('Promotion') {
+            steps {
+                echo "Promote to release repo"
+                echo env.JOB_NAME
+                echo env.BUILD_NUMBER
+
+                jf 'rt bpr ' + env.JOB_NAME  + ' ' + env.BUILD_NUMBER  + ' slash-maven-release-local --status=RELEASE --comment=Release_App_boot --source-repo=slash-maven-test-local'
+
+            }
+        }
+
+        stage('Set to release') {
+            steps {
+                sleep time: 2, unit: 'SECONDS' // 暂停 2 秒，等待晋级完成
+
+                jf 'rt sp slash-maven-release-local/com/example/jfrog/app-boot/v1.2.' + env.BUILD_NUMBER + '/app-boot-1.2.' + env.BUILD_NUMBER + '.war v1.2.' + env.BUILD_NUMBER + '=version'
+            }
+        }
+
+    }
+}

@@ -1,0 +1,6 @@
+pandas
+plotly
+Pillow
+PyPDF2
+img2pdf
+kaleido

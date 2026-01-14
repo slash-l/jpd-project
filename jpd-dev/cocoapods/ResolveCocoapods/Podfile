@@ -1,0 +1,12 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+source "https://soleng.jfrog.io/artifactory/api/pods/slash-cocoapods-virtual"
+
+target 'ResolveCocoapods' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for ResolveCocoapods
+  pod 'HelloCocoaPods', '0.1.0'
+end

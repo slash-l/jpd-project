@@ -1,0 +1,87 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0": {}
+  },
+  "libraries": {},
+  "projectFileDependencyGroups": {
+    "net8.0": [
+      "Serilog.Sinks.Console >= 4.1.0"
+    ]
+  },
+  "packageFolders": {
+    "/Users/jingyil/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/Users/jingyil/work/jfrog/jpd-project/jpd-dev/nuget/NuGetDemo/NuGetDemo.csproj",
+      "projectName": "NuGetDemo",
+      "projectPath": "/Users/jingyil/work/jfrog/jpd-project/jpd-dev/nuget/NuGetDemo/NuGetDemo.csproj",
+      "packagesPath": "/Users/jingyil/.nuget/packages/",
+      "outputPath": "/Users/jingyil/work/jfrog/jpd-project/jpd-dev/nuget/NuGetDemo/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/Users/jingyil/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
+      "sources": {
+        "https://demo.jfrogchina.com/artifactory/api/nuget/v3/slash-nuget-nexus-remote/index.json": {}
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      }
+    },
+    "frameworks": {
+      "net8.0": {
+        "targetAlias": "net8.0",
+        "dependencies": {
+          "Serilog.Sinks.Console": {
+            "target": "Package",
+            "version": "[4.1.0, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/Users/jingyil/.dotnet/sdk/8.0.413/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  },
+  "logs": [
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Unable to load the service index for source https://demo.jfrogchina.com/artifactory/api/nuget/v3/slash-nuget-nexus-remote/index.json.",
+      "libraryId": "Serilog.Sinks.Console"
+    }
+  ]
+}

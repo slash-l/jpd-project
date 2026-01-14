@@ -1,0 +1,30 @@
+{
+  "name": "@slash/app-backend",
+  "version": "1.0.7",
+  "description": "Demo backend API",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "crossenv": "1.0.1",
+    "ejs": "^2.5.5",
+    "express": "3.18.0",
+    "hapi": "0.0.6",
+    "hoek": "4.2.0",
+    "jsonwebtoken": "5.4.0",
+    "lodash": "4.17.10",
+    "moment": "2.19.1",
+    "st": "0.2.4",
+    "underscore": "1.3.2",
+    "validator": "9.4.0"
+  },
+  "devDependencies": {
+    "babel-core": "6.21.0",
+    "gulp-util": "3.0.8",
+    "nodemon": "^3.0.1",
+    "webpack": "3.5.5"
+  }
+}
