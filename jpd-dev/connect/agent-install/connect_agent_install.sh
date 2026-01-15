@@ -28,7 +28,7 @@ echo "已获取到MAC地址: $MAC_ADDRESS"
 # 外部的单引号用于 'su -c' 的命令参数
 # 内部的引号用于 wget 和 sh -s 的参数，特别是 $DEVICE_NAME 的值
 # 我们使用双引号来允许 $MAC_ADDRESS 变量的扩展
-INSTALL_COMMAND="wget -O - \"https://app.connect.jfrog.io/v2/install_connect\" | sh -s -- -n=\"device_$MAC_ADDRESS\" -g=\"ReadyGroup\" -p=\"eyJ2ZXIiOiIyIiwidHlwIjoiSldUIiwiYWxnIjoiUlMyNTYiLCJraWQiOiJsYkpadzNJUU13WXBBSWNRa01RRjN0dlA2Yml5M3dWcXdrQ0txUkxLaXhRIn0.eyJleHQiOiJ7XG4gICAgXCJwcm9qZWN0S2V5XCI6IFwic2xhc2hwcm9cIixcbn1cbiIsInN1YiI6ImpmY2FwaUAqL2RldmljZXMvKiIsInNjcCI6ImludGVybmFsOmNvbm5lY3QtYWdlbnQtdHJ1c3QvcGFpcmluZzp4IiwiYXVkIjoiamZjYXBpQCoiLCJpc3MiOiJqZmNhcGlAKiIsImlhdCI6MTc1MTQ3NTAyNywianRpIjoiMDkxMjVmZmYtYzkzZC00NDliLTlhY2UtMjVlZDQ0N2Y0NWFjIn0.lBEgUq2ecyA30ALaamqrG2RqBkM6f99zdczN8lOywFdNg6Ho5rloz7kz-FMzlAA-ZFDFUtoj0LsmFGuxJvENl__2_ZU9rYChruPotzFbNjjGRno_CAhmPTVS1_PMW9OepewyGS9SiiCq4eYoeIEG0N1u1dEOQyk17HzXYBYf-Tcj68dyuMoTnrnlotMRnucI3OGpj0BTX78b__96nAGMB6kMqFpG3H2E-4a43WYq58PEvoKmxVRBjr4a2pI_PcsQFTGUoNmNNsUwrYtbwvrTFxhr1ZmIL2fw3YYH5PBFxWxN1KCwlk3THL3JuXQQ89cMOUVnpXvNFtq6N27F8USahw\" "
+INSTALL_COMMAND="wget -O - \"https://app.connect.jfrog.io/v2/install_connect\" | sh -s -- -n=\"device_$MAC_ADDRESS\" -g=\"ReadyGroup\" -p=\"<token>\" "
 
 echo "将要执行的命令 (以root权限):"
 echo "su -c '$INSTALL_COMMAND'"

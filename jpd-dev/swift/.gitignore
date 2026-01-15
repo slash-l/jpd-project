@@ -1,3 +1,7 @@
 .build/
 .swiftpm/
 *.zip
+.netrc
+.DS_Store
+.idea/
+.vscode/

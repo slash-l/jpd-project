@@ -9,7 +9,10 @@ COPY package*.json ./
 
 # 配置 JFrog Artifactory Npm 认证 .npmrc 
 # 安装依赖
-RUN echo -e "email=admin@admin.com\nalways-auth=true\nregistry=https://demo.jfrogchina.com/artifactory/api/npm/slash-npm-virtual/\n//demo.jfrogchina.com/artifactory/api/npm/slash-npm-virtual/:_authToken=cmVmdGtuOjAxOjE3NjE3OTI2NDc6Mm5xclFPbUQ1VkpCbFM3eGFubG9FcUdONDI0" > /root/.npmrc && \
+# ACCESS_TOKEN 通过构建参数传递进来,例如:
+# docker build --build-arg ACCESS_TOKEN=your_access_token_here -t your_image_name .
+ARG ACCESS_TOKEN
+RUN echo -e "email=admin@admin.com\nalways-auth=true\nregistry=https://demo.jfrogchina.com/artifactory/api/npm/slash-npm-virtual/\n//demo.jfrogchina.com/artifactory/api/npm/slash-npm-virtual/:_authToken=$ACCESS_TOKEN" > /root/.npmrc && \
     cat /root/.npmrc && \
     npm install --production && \
     rm -f /root/.npmrc

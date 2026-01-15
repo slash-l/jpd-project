@@ -1,9 +1,10 @@
 #! /usr/bin/env python3
 
+import os
 from openai import OpenAI
 
 client = OpenAI(
-  api_key="cmVmdGtuOjAxOjE3OTgwMzc3MTU6MVNmQWdwSjNlZjB5TnpFbHhReUpyMkJBUDhz",
+  api_key=os.getenv("ACCESS_TOKEN"),
   base_url="https://models.soleng.qwak.ai/v1"
 )
 

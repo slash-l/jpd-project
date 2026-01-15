@@ -31,15 +31,12 @@ pipeline {
 
         // [Mandatory if JF_USER and JF_PASSWORD are not provided]
         // JFrog access token with 'read' permissions for Xray
-        // JF_ACCESS_TOKEN = credentials("JF_ACCESS_TOKEN")
-        JF_ACCESS_TOKEN = "eyJ2ZXIiOiIyIiwidHlwIjoiSldUIiwiYWxnIjoiUlMyNTYiLCJraWQiOiJQeGp5TlZwZVU1U0JpNktPelp1MWZOaUstUk9HXzI4N2prOFFWUjZLUmpNIn0.eyJpc3MiOiJqZmZlQDAxZzZ3a3lucXo0OGFuMHp5ajBqNW4waDRqIiwic3ViIjoiamZhY0AwMWc2d2t5bnF6NDhhbjB6eWowajVuMGg0ai91c2Vycy9zbGFzaCIsInNjcCI6ImFwcGxpZWQtcGVybWlzc2lvbnMvYWRtaW4iLCJhdWQiOiIqQCoiLCJpYXQiOjE3NDIyMTE5ODksImp0aSI6IjA2ZGE5MmYwLTM1ZTAtNDUxNi05OWZkLTA1ZWY4NjJmYzdkMiJ9.b4RFEEGqVYThUwCxBolStpVr3nUZNsVXH7XbR_XwGR067smL-kR2LjnwdCb_Bxqo3byq7P4U66L56dwol_Koh6Jg0CrjqciPLUyzaIUpkO2XftlCwV9fW6fuGdsSK88GqrlMsickmZjpQaplcbBReeN2gx0j5sZVhhtny7HG8xh28kgLf4HfYnHFbPVAOmI7YZ_MT4RnF-R--oLOhfhzHv6AF3OfJFe9_t5Q786PTW_bxceX7HGSC9iR7NGiMyvJO_iALJRw34ialpvpn-Cx7Y6I2dzYtCNfx6YFmH-6zA9kvDeMztuyfFmnZbuchMVAk_U7h7J1KNRxJ8c8lxQJrA"
-        // JF_ACCESS_TOKEN = "eyJ2ZXIiOiIyIiwidHlwIjoiSldUIiwiYWxnIjoiUlMyNTYiLCJraWQiOiJsYkpadzNJUU13WXBBSWNRa01RRjN0dlA2Yml5M3dWcXdrQ0txUkxLaXhRIn0.eyJzdWIiOiJqZmFjQDAxZTlycTMza3ljMHQxMWtwangybmcwemo1L3VzZXJzL3NsYXNoIiwic2NwIjoiYXBwbGllZC1wZXJtaXNzaW9ucy9hZG1pbiIsImF1ZCI6IipAKiIsImlzcyI6ImpmZmVAMDFlOXJxMzNreWMwdDExa3BqeDJuZzB6ajUiLCJpYXQiOjE3MjUzNzUyMjksImp0aSI6Ijg5ZWYxZWUwLWIwYmYtNDZiNi04YjUyLTc3MTI0YmZkZGYwZiJ9.KEhtMXYDKLa9Ns1AljVew1B-VWcGH_8MbX-rzrB0Kjb4m9S6-pFsN92Kde1nUmBCuK9b7dCHfK4tQAKpTV8L09SMRPEaA1gd6gCcVpw9okTRalqYinAqhHss7yeFKepNa0Ps2WM5ZPIVmh0Gm4MGoSzRR5mzftA6XoEnEv-uu3M9DqcH6gOtJCYGbAXxdRxFvxHKOEgE-6DKaRBiEEA6oE4WIl339qfk3Tr-VqpBTTYrIgWNsxUZegpK4cgmMITB3PuRsmG4DiARV1uC1kzesZz8cx1tYf4sghJn8quiTwK9LtACwL450GvbrrYgORRJgnQf-f-mL--5z63LGLlfsg"
-
+        JF_ACCESS_TOKEN = credentials("JF_ACCESS_TOKEN")
+        
         // [Mandatory]
         // GitHub enterprise server access token with the following permissions:
         // Read and Write access to code, pull requests, security events, and workflows
-        // JF_GIT_TOKEN = credentials("JF_GIT_TOKEN")
-        JF_GIT_TOKEN = "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"
+        JF_GIT_TOKEN = credentials("JF_GIT_TOKEN")
 
         // [Mandatory for on-premise]
         // API endpoint to VCS provider REST API

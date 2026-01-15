@@ -3,7 +3,7 @@
 ARTIFACTORY_URL="http://10.245.198.16:8082"
 REPOSITORY="example-repo-local"
 USERNAME="admin"
-PASSWORD="4RRL5HwMcXoN7UTq81o"
+PASSWORD="<JPD-admin-password>"
 FILE_PREFIX="large_file"
 FILE_SIZE="2M"
 ITERATIONS=100

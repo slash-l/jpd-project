@@ -4,7 +4,7 @@
 # Nexus 仓库的 URL 和认证信息
 NEXUS_URL="http://47.117.146.131:8083/service/rest/v1/components?repository=maven-releases"
 USERNAME="admin"
-PASSWORD="Slashliu0709!"
+PASSWORD="<nexus-admin-password>"
 
 # 基础信息
 GROUP_ID="com.mumu.maven.testdata9"

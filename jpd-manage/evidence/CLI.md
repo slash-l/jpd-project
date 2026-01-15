@@ -3,7 +3,7 @@
 ```
 jf evd create \
 --subject-repo-path slash-maven-dev-local/com/example/jfrog/app-boot/1.0.2/app-boot-1.0.2.war \
---key evidence.key \
+--key ~/jpd-evidence-key/evidence.key \
 --key-alias evd-key-20251230-150302 \
 --predicate predicate.json \
 --predicate-type https://jfrog.com/evidence/approval/v1 \
