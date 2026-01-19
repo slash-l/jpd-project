@@ -44,9 +44,9 @@ AppTrust 逻辑架构
 
 问题：  
 1. PROD stage 不可更改，但是貌似只有 Global 没有 Project 级别
-2. 创建 application level policy 在 lifecycle 中不现实，无效（估计是 bug）
-3. 绑定 package 的意义在哪里，因为貌似通过 application 的版本就可以使用了。
-4. apptrust 和 RLM 功能有很多重叠，那它的卖点在哪？为什么客户要花钱呢？RML 企业版就可以直接使用了。
+2. 项目级别的 rbv2 dashboard 为什么显示了全局的 stage？
+3. 创建 application level policy 在 lifecycle 中不现实，无效（估计是 bug）
+4. 绑定 package 的意义在哪里，因为貌似通过 application 的版本就可以使用了。
 5. Application -> Insights 数据怎么来的
 6. 一个 project 只能配置一个 lifecycle 流水线是吗？
 

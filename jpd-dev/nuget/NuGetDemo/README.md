@@ -1,3 +1,9 @@
+## .net
+
+### .csproj 文件
+CSProj 文件（C# 项目文件）是 Visual Studio / .NET SDK 使用的项目配置文件，它定义了项目的结构、依赖项、构建规则和元数据。
+
+
 
 # 查看当前源
 dotnet nuget list source
@@ -20,7 +26,11 @@ dotnet restore
 
 
 # 添加 Artifactory 源
-dotnet nuget Add source -n Artifactory https://demo.jfrogchina.com/artifactory/api/nuget/v3/slash-nuget-remote/index.json -u slash -p cmVmdGtuOjAxOjE3NTc3MjEwNTc6aXNyQ3VseTJhd3A2dEJwamR2eUlGQVExNUdI --store-password-in-clear-text
+dotnet nuget add source -n Artifactory https://demo.jfrogchina.com/artifactory/api/nuget/v3/slash-nuget-virtual/index.json -u slash -p <password> --store-password-in-clear-text
+
+dotnet nuget list source
+
+dotnet nuget remove source <source_repo_name>
 
 添加一个 http 源，需要在全局配置文件手动添加：   
 vim ~/.nuget/NuGet/NuGet.Config  
@@ -29,36 +39,29 @@ vim ~/.nuget/NuGet/NuGet.Config
 <configuration>
   <packageSources>
     <add key="nuget.org" value="https://api.nuget.org/v3/index.json" protocolVersion="3" />
-    <add key="Artifactory" value="https://demo.jfrogchina.com/artifactory/api/nuget/v3/slash-nuget-remote/inde
-x.json" />
-    <add key="Artifactory2" value="https://demo.jfrogchina.com/artifactory/api/nuget/v3/slash-nuget-nexus-remo
-te/index.json" />
     <add key="Nexus" value="http://47.117.139.192:8081/repository/nuget.org-proxy/index.json" allowInsecureCon
 nections="true"/>
   </packageSources>
   <packageSourceCredentials>
-    <Artifactory>
-        <add key="Username" value="slash" />
-        <add key="ClearTextPassword" value="cmVmdGtuOjAxOjE3NTc3MjEwNTc6aXNyQ3VseTJhd3A2dEJwamR2eUlGQVExNUdI" 
-/>
-      </Artifactory>
-    <Artifactory2>
-      <add key="Username" value="slash" />
-      <add key="ClearTextPassword" value="cmVmdGtuOjAxOjE3NTc3MjEwNTc6aXNyQ3VseTJhd3A2dEJwamR2eUlGQVExNUdI" />
-    </Artifactory2>
     <Nexus>
       <add key="Username" value="admin" />
-      <add key="ClearTextPassword" value="Slashliu0709!" />
+      <add key="ClearTextPassword" value="<password>" />
     </Nexus>
   </packageSourceCredentials>
 
   <disabledPackageSources>
     <add key="nuget.org" value="true" />
-    <add key="Artifactory" value="true" />
-    <add key="Artifactory2" value="true" />
   </disabledPackageSources>
 </configuration>
 ```
 
 # 关闭 nuget.org 源
 dotnet nuget disable source nuget.org
+
+
+## 添加 Nuget 包
+```
+dotnet add package Newtonsoft.Json
+```
+命令执行后会自动修改 .csproj 文件
+
