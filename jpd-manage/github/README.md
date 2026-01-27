@@ -8,3 +8,6 @@ https://github.com/slash-l/jpd-github
 ## 🔔 CI 集成
 [JFrog 与 GitHub Action 集成](./CI.md)
 
+## 🔔 JFrog GitHub Copilot Extension
+[JFrog GitHub Copilot Extension](./copilot.md)
+

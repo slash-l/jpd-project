@@ -1,0 +1,5 @@
+version: 1
+type: dotnet
+resolver:
+    repo: slash-nuget-virtual
+    serverId: demo-jfrogchina

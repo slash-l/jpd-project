@@ -1,0 +1,107 @@
+# 1. Go 编译输出
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# 2. 二进制文件
+/bin
+/dist
+/out
+*.out
+*.test
+
+# 3. 依赖管理
+/vendor
+/go.sum
+
+# 4. Go 工作区文件
+go.work
+go.work.sum
+
+# 5. 包管理工具
+glide.lock
+Gopkg.lock
+Gopkg.toml
+
+# 6. 环境配置文件
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# 7. IDE 配置文件
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.code-workspace
+
+# 8. 操作系统文件
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# 9. 编辑器临时文件
+*~
+*.swp
+*.swo
+*.sublime-*
+*.bak
+
+# 10. 日志文件
+*.log
+logs/
+*.pid
+
+# 11. 覆盖率报告
+coverage.txt
+coverage.html
+coverage.out
+*.coverprofile
+
+# 12. 性能分析文件
+cpu.out
+mem.out
+block.out
+mutex.out
+*.prof
+
+# 13. 临时目录
+/tmp
+/temp
+*.tmp
+*.temp
+
+# 14. 构建产物
+*.tar.gz
+*.zip
+*.deb
+*.rpm
+*.msi
+
+# 15. 数据库文件
+*.db
+*.sqlite
+*.sqlite3
+
+# 16. 证书文件
+*.pem
+*.key
+*.crt
+*.cer
+
+# 17. 配置文件（可根据需要保留）
+config.yaml
+config.yml
+config.json
+config.toml
+config.ini

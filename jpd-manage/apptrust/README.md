@@ -21,7 +21,8 @@ AppTrust 逻辑架构
     
 - step 6 绑定 package 到 application  
     API 方式：https://jfrog.com/help/r/jfrog-rest-apis/bind-package-version  
-    OIDC integration：（待实操）
+    OIDC integration：Demo 工程  
+    https://github.com/slash-l/jpd-github
 
 - step 7 维护 application version.   
     jf version 2.81.0+  
@@ -43,12 +44,13 @@ AppTrust 逻辑架构
 
 
 问题：  
-1. PROD stage 不可更改，但是貌似只有 Global 没有 Project 级别
-2. 项目级别的 rbv2 dashboard 为什么显示了全局的 stage？
-3. 创建 application level policy 在 lifecycle 中不现实，无效（估计是 bug）
-4. 绑定 package 的意义在哪里，因为貌似通过 application 的版本就可以使用了。
-5. Application -> Insights 数据怎么来的
-6. 一个 project 只能配置一个 lifecycle 流水线是吗？
+- PROD stage 不可更改，但是貌似只有 Global 没有 Project 级别
+- 项目级别的 rbv2 dashboard 为什么显示了全局的 stage？
+- 创建 application level policy 在 lifecycle 中不现实，无效（估计是 bug）
+- 绑定 package 的意义在哪里，因为貌似通过 application 的版本就可以使用了。
+- artifact 如何绑定？如何客户不用 package 怎么办？
+- Application -> Insights 数据怎么来的
+- 一个 project 只能配置一个 lifecycle 流水线是吗？
 
 
 ### Evidence

@@ -62,10 +62,9 @@ GitHub Dependabot is a tool for identifying vulnerabilities in source code depen
 GitHub UI setting 打开此功能
 ![alt text](images/depenabot.png)
 
-（实操未成功）
-
 ## 2.2 GitHub Advanced Security
 GitHub public repo 可以免费使用
+
 
 
 
