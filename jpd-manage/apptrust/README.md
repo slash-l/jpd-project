@@ -21,12 +21,13 @@ AppTrust 逻辑架构
     
 - step 6 绑定 package 到 application  
     API 方式：https://jfrog.com/help/r/jfrog-rest-apis/bind-package-version  
-    OIDC integration：Demo 工程  
+    OIDC integration：工程根目录创建 .jfrog/config.yaml 配置 application key，在执行 CI 流水线后，package 会自动绑定到 application  
+    参考 Demo 工程  
     https://github.com/slash-l/jpd-github
 
 - step 7 维护 application version.   
     jf version 2.81.0+  
-    build release-bundle application 三选一  
+    artifact package build release-bundle application 5种方式创建  
     ```
     # 创建 application 版本
     jf apptrust version-create slash-application v1.0 --source-type-builds="name=slash-build-maven,id=1"
@@ -39,16 +40,22 @@ AppTrust 逻辑架构
 
 - step 8 Lifecycle Policies  
     针对每个 stage 可以配置 entry 和 exit 两种 policy 作为门禁。  
-    权限要求：Admin 或者 Project Admin
+    权限要求：Admin 或者 Project Admin.  
+    rule 可以自定义
 
+- step 9 Promotion
+    
+
+
+### webhook events
+- Entry and exit gate evaluations (started, passed, failed)
+- Application creation, modification, and deletion (started, failed, completed)
+- Application version creation, promotion, and release (started, completed, failed)
 
 
 问题：  
-- PROD stage 不可更改，但是貌似只有 Global 没有 Project 级别
-- 项目级别的 rbv2 dashboard 为什么显示了全局的 stage？
 - 创建 application level policy 在 lifecycle 中不现实，无效（估计是 bug）
-- 绑定 package 的意义在哪里，因为貌似通过 application 的版本就可以使用了。
-- artifact 如何绑定？如何客户不用 package 怎么办？
+- 绑定 package 的使用场景是什么？官方wiki也是可选项，但是想知道用这个的好处和场景。
 - Application -> Insights 数据怎么来的
 - 一个 project 只能配置一个 lifecycle 流水线是吗？
 
