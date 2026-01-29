@@ -10,7 +10,7 @@
   "license": "ISC",
 
   "publishConfig":{
-    "registry":"https://demo.jfrogchina.com/artifactory/api/npm/slash-npm-virtual/"
+    "registry":"https://demo.jfrogchina.com/artifactory/api/npm/slash-npm-stage-local/"
   },
 
   "dependencies": {
