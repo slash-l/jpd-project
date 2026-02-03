@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "ejs": "2.5.5",
+    "ejs": "3.1.10",
     "validator": "9.4.0"
   }
 }
