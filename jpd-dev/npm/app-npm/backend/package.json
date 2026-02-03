@@ -11,7 +11,7 @@
     "cors": "^2.8.5",
     "crossenv": "1.0.1",
     "ejs": "^2.5.5",
-    "express": "3.18.0",
+    "express": "4.22.0",
     "hapi": "0.0.6",
     "hoek": "4.2.0",
     "jsonwebtoken": "5.4.0",
