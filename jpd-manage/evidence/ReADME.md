@@ -46,5 +46,21 @@ Evidence 3 种创建方式
 - [JFrog Rest Api](./API.md)（待实操更新）
 - [JFrog DSSE](./DSSE.md)（待实操更新）
 
+## 4. Demo
+Example:  
+https://github.com/slash-l/jpd-github.git 
+
+### 4.1 Sonar Evidence
+Sonar 需要企业版  
+```
+jf evd create \
+--subject-repo-path slash-maven-dev-local/com/example/github/jfrog/maven/app-maven/0.0.1-SNAPSHOT/app-maven-0.0.1-20260201.131544-1.war \
+--key ~/jpd-evidence-key/evidence.key \
+--key-alias evd-key-20251230-150302 \
+--integration sonar
+```
+使用 JFrog CLI evidence 命令行报如下错：
+![alt text](./images/sonar-error.png)
+
 
 
